@@ -1,25 +1,49 @@
-# Milestone 1 - Music School
+# Milestone 1 - Music School - by Kevin Bourke
 
-One or two paragraphs providing an overview of your project.
-
-Essentially, this part is your sales pitch.
+This project is a small website for a Music School. The main purpose would be to get people interest in taking the music classes on offer from the music school. It promotes the positive benefits of learning music to help sell the classes. The website will display the various intruments that they teach as well as upcoming classes.
  
 ## UX
+
+### User Stories
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+- As a user who is thinking about learning a musical instrument, I want to find out information that might convince me to take a class. The option of taking a free introductory class would be quite appealing.
+- As a user who has already begun learning an instrument, perhaps I want to find some more formal training, to help me progress, or to add other related skills like reading music.
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+### Strategy
+My goal in the design was to make it as easy as possible to access information on the site while striving for a minimalist and user-friendly design.
+
+### Scope
+For employers, I wanted to provide them with a brief overview of myself and my capabilities. This way, they would be able to get a glimpse of who I am, my background, work I've done, and my skills, with the option to contact me if they choose.
+
+### Structure
+In the 'Work/Travail' section, I wanted them to be able to quickly access work that I've done, providing a short summary of the project and main technologies with a link to each GitHub Repository and live demo. A link to my LinkedIn profile, my GitHub, and a downloadable PDF version of my CV were also provided for their ease of access.
+
+### Skeleton
+
+
+### Surface
+The colour scheme...
+
+## Technologies Used
+
+1. HTML
+2. CSS
+3. Bootstrap CSS Framework
+
+- [JQuery](https://jquery.com)
+    - The project uses **JQuery** to simplify DOM manipulation.
 
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
+- Feature 1 - allows users contact the school, by having them fill out the contact form.
+- 
 
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
@@ -27,14 +51,6 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 - Another feature idea
-
-## Technologies Used
-
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
-
 
 ## Testing
 
@@ -58,12 +74,7 @@ If this section grows too long, you may want to split it off into a separate fil
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
