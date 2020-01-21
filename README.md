@@ -24,7 +24,7 @@ For employers, I wanted to provide them with a brief overview of myself and my c
 In the 'Work/Travail' section, I wanted them to be able to quickly access work that I've done, providing a short summary of the project and main technologies with a link to each GitHub Repository and live demo. A link to my LinkedIn profile, my GitHub, and a downloadable PDF version of my CV were also provided for their ease of access.
 
 ### Skeleton
-
+Change Skeleton
 
 ### Surface
 The colour scheme...
