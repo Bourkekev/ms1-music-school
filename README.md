@@ -6,9 +6,8 @@ This project is a small website for a Music School. The main purpose would be to
 
 ### User Stories
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+This section provides insight into the UX process, focusing on who this website is for, what it is that they want to achieve and how this project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 - As a user who is thinking about learning a musical instrument, I want to find out information that might convince me to take a class. The option of taking a free introductory class would be quite appealing. (image of free class)
 - As a user who has already begun learning an instrument, perhaps I want to find some more formal training, to help me progress, or to add other related skills like reading music. (image of classes)
 - As a user who might have children who are interested in music, I want to find out if these classes look appropriate, and where they take place. (image of Teachers, references to children, map)
