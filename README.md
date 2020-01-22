@@ -19,14 +19,24 @@ This section provides insight into the UX process, focusing on who this website 
 
 
 ### Structure
-At this point I started thinking about what information, pages, features, and calls to action were to necessary and how they would be group. I have included some basic sketching of ideas:
+At this point I started thinking about what information, pages, features, and calls to action were to necessary and how they would be grouped. I have included some basic sketching of ideas:
 - [Initial ideas 01](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/initial-ideas.jpg)
     - These are initial ideas for the organisation of information and pages required, and sketching them down. It is rough and not very organised at this point.
 - [Initial ideas 02](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/initial-ideas-02.jpg)
-    - This is a bit more refined sketch of the information and order of the information, I would like on the pages. Below that there are jsut somne quick sketches of the footer, contact page and an element for presenting a music class.
+    - This is a bit more refined sketch of the information and order of the information, I would like on the pages. Below that there are just some quick sketches of the footer, contact page and an element for presenting a music class.
 
 ### Skeleton
-I 
+At this point I began sketching proper wireframes, first on paper as it is quicker, helps to get the ideas out faster. I needed to think about how the User will navigate through the site, what content has priority, and how the content relates to each other. 
+- [Home page on mobile, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/homepage-mobile.jpg)
+    
+- [Home page on desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/homepage-desktop.jpg)
+    
+- [About page desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/about-page-desktop.jpg)
+    
+- [Classes page desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/classes-page-desktop.jpg)
+    
+This formed the basis of my final wireframes, which were created in Balsamiq:
+
 
 ### Surface
 The colour scheme...
