@@ -37,6 +37,21 @@ At this point I began sketching proper wireframes, first on paper as it is quick
     
 This formed the basis of my final wireframes, which were created in Balsamiq:
 
+- [Home page on mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Music%20School%20homepage%20(mobile%20version).png)
+    
+- [Home page on desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Music%20School%20homepage.png)
+    
+- [About page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/About%20-%20Music%20school%20(mobile%20version).png)
+
+- [About page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/About%20-%20Music%20school.png)
+    
+- [Classes page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Classes%20and%20Fees%20(Mobile%20Version).png)
+
+- [Classes page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Classes%20and%20Fees.png)
+
+- [Contact page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Contact%20-%20Music%20School%20(Mobile%20version).png)
+
+- [Contact page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Contact%20-%20Music%20School.png)
 
 ### Surface
 The colour scheme...
