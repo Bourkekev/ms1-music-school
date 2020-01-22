@@ -12,18 +12,21 @@ This section provides insight into the UX process, focusing on who this website 
 - As a user who has already begun learning an instrument, perhaps I want to find some more formal training, to help me progress, or to add other related skills like reading music. (image of classes)
 - As a user who might have children who are interested in music, I want to find out if these classes look appropriate, and where they take place. (image of Teachers, references to children, map)
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 ### Strategy
-My goal in the design was to make it as easy as possible to access information on the site while striving for a minimalist and user-friendly design.
+
 
 ### Scope
-For employers, I wanted to provide them with a brief overview of myself and my capabilities. This way, they would be able to get a glimpse of who I am, my background, work I've done, and my skills, with the option to contact me if they choose.
+
 
 ### Structure
-In the 'Work/Travail' section, I wanted them to be able to quickly access work that I've done, providing a short summary of the project and main technologies with a link to each GitHub Repository and live demo. A link to my LinkedIn profile, my GitHub, and a downloadable PDF version of my CV were also provided for their ease of access.
+At this point I started thinking about what information, pages, features, and calls to action were to necessary and how they would be group. I have included some basic sketching of ideas:
+- [Initial ideas 01](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/initial-ideas.jpg)
+    - These are initial ideas for the organisation of information and pages required, and sketching them down. It is rough and not very organised at this point.
+- [Initial ideas 02](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/initial-ideas-02.jpg)
+    - This is a bit more refined sketch of the information and order of the information, I would like on the pages. Below that there are jsut somne quick sketches of the footer, contact page and an element for presenting a music class.
 
 ### Skeleton
-Change Skeleton
+I 
 
 ### Surface
 The colour scheme...
