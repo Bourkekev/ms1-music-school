@@ -14,12 +14,16 @@ This section provides insight into the UX process, focusing on who this website 
 
 ### Strategy
 There are 2 main goals of the website: 
-- 1. to get potential customers to sign up for a class, be it by applying for a term of classes or taking up the option of a free lesson to get a 'taster' for a class. This is probably the main goal.
-- 2. to give potential customers information about the music school to entice them to take a class in this school over competitors.
-
+ 1. to get potential customers to sign up for a class, be it by applying for a term of classes or taking up the option of a free lesson to get a 'taster' for a class. This is probably the main goal.
+ 2. to give potential customers information about the music school to entice them to take a class in this school over competitors.
 
 ### Scope
-
+This section determines what the users should be able to do on the website.
+1. Sign up for a class.
+2. Sign up for a free lesson as a sample.
+3. Find out what music classes does the school do, and what cost.
+4. Contact the music school for further information.
+5. Find out where the music school is.
 
 ### Structure
 At this point I started thinking about what information, pages, features, and calls to action were to necessary and how they would be grouped. I have included some basic sketching of ideas:
