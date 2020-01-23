@@ -2,3 +2,7 @@
 .full-width-header {
     background-color: red;
 }
+/* nav bar */
+.navbar-dark .navbar-toggler {
+    border: none;
+}
