@@ -13,6 +13,9 @@ This section provides insight into the UX process, focusing on who this website 
 - As a user who might have children who are interested in music, I want to find out if these classes look appropriate, and where they take place. (image of Teachers, references to children, map)
 
 ### Strategy
+There are 2 main goals of the website: 
+- 1. to get potential customers to sign up for a class, be it by applying for a term of classes or taking up the option of a free lesson to get a 'taster' for a class. This is probably the main goal.
+- 2. to give potential customers information about the music school to entice them to take a class in this school over competitors.
 
 
 ### Scope
