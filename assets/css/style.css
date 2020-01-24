@@ -6,3 +6,16 @@
 .navbar-dark .navbar-toggler {
     border: none;
 }
+
+/* -------------------- Footer -----------*/
+.full-width-footer {
+    background: antiquewhite;
+}
+.full-width-footer > .container {
+    padding: 30px 0;
+}
+.full-width-copyright {
+    padding: 30px 0;
+    background: green;
+    font-size: 12px;
+}
