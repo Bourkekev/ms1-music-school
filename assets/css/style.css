@@ -13,7 +13,6 @@
     background: rgba(255,255,255,0.2);
 }
 /* Navbar close X icon */
-
 .navbar-dark .navbar-toggler.collapsed .navbar-toggler-icon {
     background-image: url(../images/bs-nav-icon.svg);
 }
@@ -25,6 +24,7 @@
 /* -------------------- Footer -----------*/
 .full-width-footer {
     background: antiquewhite;
+    font-size: 14px;
 }
 .full-width-footer > .container {
     padding: 30px 0;
@@ -33,4 +33,56 @@
     padding: 30px 0;
     background: green;
     font-size: 12px;
+}
+.opening-hours .oh-list {
+    list-style: none;
+    padding: 0;
+}
+.opening-hours .oh-list:before {
+    content: '\f017';
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+/* FA Icons */
+.opening-hours .fas {
+    float: left;
+}
+.contact-icons-list,
+.social-icons-list {
+    list-style: none;
+    padding: 0;
+}
+.contact-icons-list li {
+/*    font-size: 18px;*/
+    
+    margin: 10px 0 0;
+    padding: 0;
+}
+.contact-icons-list .fas {
+    margin: 0 1.15em 0 0;/* keep margin relative to font-size */
+}
+.social-icons-list li {
+    display: inline-block;
+    margin: 5px 5px 0 0;
+}
+.social-icons-list li a {
+    color: #fff;
+    background: grey;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+/*    -webkit-background-clip: padding-box;*/
+    -moz-border-radius: 50%;
+/*    -moz-background-clip: padding;*/
+    border-radius: 50%;
+/*    background-clip: padding-box;*/
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    transition: all .3s ease;
+}
+.social-icons-list li a:hover {
+    background-color: red;
 }
