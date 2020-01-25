@@ -78,6 +78,14 @@ The colour scheme...
 ## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+
+### Expand the sections below for more info on details
+<details>
+  <summary>Creating navbar X to close</summary>
+  
+  To create the X that appears when the navbar is open, I first created an svg file from the bootstrap svg that was embedded as data:image. I edited this with Illustrator to create the X and then I had to copy the stroke styles for the path from the bootstrap svg so it was visible. 
+  Then i added the class 'collapsed' to the button.navbar-toggler element in the HTML, so it has this class by default on load (usually only added upon clicking  menu toggle the first time). I overrode the default background images for the toggle icon, and changed the image when the toggler does not have the class 'collapsed' on it.
+</details>
  
 ### Existing Features
 - Feature 1 - allows users contact the school, by having them fill out the contact form.

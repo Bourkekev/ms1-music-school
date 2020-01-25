@@ -2,10 +2,25 @@
 .full-width-header {
     background-color: red;
 }
-/* nav bar */
+/* nav bar adjustments to bootstrap navbar */
 .navbar-dark .navbar-toggler {
     border: none;
 }
+.navbar-nav {
+    text-align: center;
+}
+.nav-item.active {
+    background: rgba(255,255,255,0.2);
+}
+/* Navbar close X icon */
+
+.navbar-dark .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url(../images/bs-nav-icon.svg);
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../images/bs-nav-icon-open.svg);
+}
+
 
 /* -------------------- Footer -----------*/
 .full-width-footer {
