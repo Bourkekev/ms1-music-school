@@ -1,17 +1,41 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+}
+
 /* -------------------- HEADER -----------*/
 .full-width-header {
     background-color: red;
+    box-shadow: #bbb 0 2px 5px 0px;
 }
-/* nav bar adjustments to bootstrap navbar */
+/* NAV BAR adjustments to bootstrap navbar */
 .navbar-dark .navbar-toggler {
     border: none;
 }
 .navbar-nav {
     text-align: center;
 }
+.navbar-nav .nav-item .nav-link {
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    height: 70px;
+    line-height: 70px;
+}
+.nav-link:after {
+    background-color: #9dc02e;
+    display: block;
+    content: '';
+    height: 4px;
+}
 .nav-item.active {
     background: rgba(255,255,255,0.2);
 }
+
 /* Navbar close X icon */
 .navbar-dark .navbar-toggler.collapsed .navbar-toggler-icon {
     background-image: url(../images/bs-nav-icon.svg);
@@ -36,13 +60,21 @@
 }
 .opening-hours .oh-list {
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 40px;
+    position: relative;
+    margin-top: 20px
 }
 .opening-hours .oh-list:before {
     content: '\f017';
     display: block;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+}
+.oh-list-item {
+    margin-top: 10px;
 }
 /* FA Icons */
 .opening-hours .fas {
@@ -53,10 +85,10 @@
     list-style: none;
     padding: 0;
 }
-.contact-icons-list li {
+.contact-list-item  {
 /*    font-size: 18px;*/
     
-    margin: 10px 0 0;
+    margin: 20px 0 0;
     padding: 0;
 }
 .contact-icons-list .fas {
@@ -64,6 +96,7 @@
 }
 .social-icons-list li {
     display: inline-block;
+    font-size: 18px;
     margin: 5px 5px 0 0;
 }
 .social-icons-list li a {
@@ -85,4 +118,14 @@
 }
 .social-icons-list li a:hover {
     background-color: red;
+}
+/* ---------------------------------- MEDIA SIZES --------------------*/
+@media screen and (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .nav-link {
+        color: red;
+    }
 }
