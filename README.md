@@ -66,7 +66,7 @@ This formed the basis of my final wireframes, which were created in Balsamiq:
 ### Surface
 This is the sensory design section of a website, or how it looks, feels and sounds. I wanted the design to be clean and the colour scheme to be light and refreshing. I decided on a pastel green as Green makes you feel optimistic and refreshed, and Green symbolizes health, new beginnings and wealth, according to [this article on 99 designs](https://99designs.ie/blog/tips/how-color-impacts-emotions-and-behaviors/). 
 
-Also Spotify, currently the largest music streaming service in the world uses green in it's logo and designs, which likely represents freshness and vitality, something essential to a music brand. For reference see point 29 here - (https://piktochart.com/blog/inspirational-brand-colors/)
+Also Spotify, currently the largest music streaming service in the world uses green in it's logo and designs, which likely represents freshness and vitality, something essential to a music brand. For reference see point 29 here - (https://piktochart.com/blog/inspirational-brand-colors/). However, I did not want it as vibrant or bright as the Spotify green, and leaning more toward the blue spectrum more like AirBnb.
 
 I wanted the __language__ to be casual and conversational, and not jargony or too technical.
 
