@@ -40,7 +40,11 @@ h1, h2, h3, h4, h5, h6 {
 .nav-item.active {
     background: rgba(255,255,255,0.2);
 }
-
+/* Nav Branding and Logo */
+.logo {
+    width: 80px;
+    height: auto;
+}
 /* Navbar close X icon */
 .navbar-dark .navbar-toggler.collapsed .navbar-toggler-icon {
     background-image: url(../images/bs-nav-icon.svg);
@@ -132,5 +136,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     .nav-link {
         color: red;
+    }
+    /* Nav Branding and Logo */
+    .logo {
+        width: 100px;
+        height: auto;
     }
 }
