@@ -12,45 +12,63 @@ h1, h2, h3, h4, h5, h6 {
 
 /* -------------------- HEADER -----------*/
 .full-width-header {
-    background-color: red;
+    background-color: #fff;
     box-shadow: #bbb 0 2px 5px 0px;
 }
 /* NAV BAR adjustments to bootstrap navbar */
-.navbar-dark .navbar-toggler {
+.navbar {
+    padding: 0 1rem;
+}
+.navbar-dark .navbar-toggler,
+.navbar-light .navbar-toggler{
     border: none;
 }
 .navbar-nav {
     text-align: center;
 }
 .navbar-nav .nav-item .nav-link {
-    color: red;
+    color: #005950;
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
     height: 70px;
     line-height: 70px;
+    padding-bottom: 0;
+    padding-top: 0;
 }
-.nav-link:after {
+.nav-item.active .nav-link:after,
+.nav-item:hover .nav-link:after {
     background-color: #9dc02e;
     display: block;
     content: '';
     height: 4px;
+    margin-top: -4px;
 }
+/*
 .nav-item.active {
     background: rgba(255,255,255,0.2);
 }
+.navbar-light .nav-item.active {
+    background: rgba(0,0,0,0.2);
+}
+*/
 /* Nav Branding and Logo */
 .logo {
     width: 80px;
     height: auto;
 }
 /* Navbar close X icon */
-.navbar-dark .navbar-toggler.collapsed .navbar-toggler-icon {
-    background-image: url(../images/bs-nav-icon.svg);
+.navbar-dark .navbar-toggler.collapsed .navbar-toggler-icon,
+.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url(../images/bs-nav-icon-green.svg);
 }
-.navbar-dark .navbar-toggler-icon {
-    background-image: url(../images/bs-nav-icon-open.svg);
+.navbar-dark .navbar-toggler-icon,
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/bs-nav-icon-green-open.svg);
+}
+.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
+    stroke: #005950;
 }
 
 
@@ -133,9 +151,6 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
-    }
-    .nav-link {
-        color: red;
     }
     /* Nav Branding and Logo */
     .logo {
