@@ -6,10 +6,33 @@ Monochromatic - #00D9C3 #309F94 #008C7E #41D9C9 #005950
 body {
     font-family: 'Source Sans Pro', sans-serif;
 }
+.screen-reader-link:focus {
+    clip: auto !important;
+    height: auto;
+    width: auto;
+    display: block;
+    font-weight: bold;
+    padding: 15px 25px 15px;
+    color: #333;
+    background: #fff;
+    z-index: 100000;
+    text-decoration: none;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+}
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
 }
-
+h1.page-title {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+h1.carousel-title {
+    font-size: 35px;
+}
 /* -------------------- HEADER -----------*/
 .full-width-header {
     background-color: #fff;
@@ -64,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(0,0,0,0.1);
 }
 
-/* Nav Branding and Logo */
+/* ------------------- Nav Branding and Logo */
 .logo {
     width: 80px;
     height: auto;
@@ -81,7 +104,61 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-light .navbar-toggler.collapsed .navbar-toggler-icon {
     stroke: #005950;
 }
+#maincontent {
+    margin-top: 50px;
+}
+/* --------------------------------- Carousel */
 
+/* Center the captions vertically */
+.carousel-caption {
+    bottom: 50%;
+    -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+            transform: translateY(50%);
+}
+.carousel-caption .blockquote .fa {
+    opacity: 0.3;
+}
+.carousel-caption .blockquote-footer {
+    color: #15d8c5;
+    text-transform: uppercase;
+}
+
+/* Page Title Panel */
+.title-panel {
+    background: url(../images/acoustic-guitar-title-panel-1920x250.jpg) center center;
+    background-size: cover;
+    padding: 40px 0;
+    position: relative;
+}
+.slide--home:before,
+.title-panel:before {
+    content: "";
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.title-panel > .container {
+    position: relative;
+    z-index: 2;
+}
+/*---- Buttons ----*/
+.btn-primary {
+    background: #16D9C5;
+    border: none;
+    color: #004039;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #BF3D00;
+}
+.btn-lg {
+    padding: .8rem 2rem;
+}
 
 /* -------------------- Footer -----------*/
 .full-width-footer {
@@ -159,11 +236,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* ---------------------------------- MEDIA SIZES --------------------*/
 @media screen and (min-width: 768px) {
+    h1.page-title {
+        font-size: 60px;
+    }
+    /* Nav Branding and Logo */
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-    /* Nav Branding and Logo */
     .logo {
         width: 100px;
         height: auto;
@@ -175,5 +255,22 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-nav .nav-item .nav-link {
         height: 100px;
         line-height: 100px;
+    }
+    /* Carousel */
+    #maincontent {
+        margin-top: 100px;
+    }
+    h1.carousel-title {
+        font-size: 2.5rem;
+    }
+    .title-panel {
+        padding: 80px 0;
+    }
+}
+/* Media queries large desktop */
+@media screen and (min-width: 1200px) {
+    /* Carousel */
+    h1.carousel-title {
+        font-size: 4rem;
     }
 }

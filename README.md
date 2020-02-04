@@ -90,6 +90,10 @@ I wanted the __language__ to be casual and conversational, and not jargony or to
 1. HTML
 2. CSS
 3. Bootstrap CSS Framework
+4. Font Awesome
+5. Google Fonts
+
+Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).
 
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
@@ -110,6 +114,9 @@ In this section, you should go over the different parts of your project, and des
 - Feature 1 - allows users contact the school, by having them fill out the contact form.
 - 
 
+#### Minor Features
+ - There is a 'Skip to main content' link just inside the body tag for accessibility for screenreaders. The main content is not usually the first thing on a web page. Keyboard and screen reader users generally must navigate a long list of navigation links, sub-lists of links, corporate icons, site searches, and other elements before ever arriving at the main content. This is then hidden from view with the bootstrap class 'sr-only', however when it receives focus from keyboard it becomes visible, by basically reversing the Bootstrap CSS properties on focus. This is based on accessibility recommendations from https://webaim.org/techniques/skipnav/
+
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
@@ -125,7 +132,10 @@ Whenever it is feasible, prefer to automate your tests, and if you've done so, p
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Contact form:
+1. Responsive carousel images:
+    1. To allow me to use a different image in the carousel for mobile I used the `<picture>` element. This allowed me to create a smaller portrait image just for a mobile, which gave more space for the carousel text that is layered on top.
+    
+2. Contact form:
     1. Go to the "Contact Us" page
     2. Try to submit the empty form and verify that an error message about the required fields appears
     3. Try to submit the form with an invalid email address and verify that a relevant error message appears
@@ -148,9 +158,13 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Content
 - The text for the Quotes section were taken from the [CMuse article ](https://www.cmuse.org/100-famous-and-inspirational-music-quotes/)
+- 
 
 ### Media
-- The photos used in this site were obtained from ...
+- The photos and vectors used in this site were obtained from:
+    - https://pixabay.com/
+    - https://www.vecteezy.com/
+- The favicons were generated at https://realfavicongenerator.net/
 
 ### Acknowledgements
 
