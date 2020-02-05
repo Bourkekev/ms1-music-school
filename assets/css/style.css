@@ -194,7 +194,12 @@ a:hover {
 .btn-lg {
     padding: .8rem 2rem;
 }
-
+/* -- Special Offer Overlay -- */
+.spec-offer-overlay {
+/*    background-color: #fffcf1;*/
+    background-color: #00D9C3;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,.2);
+}
 /* -------------------- Contact ----------*/
 .contact-card--icon {
     color: #008C7E;
@@ -338,6 +343,14 @@ a:hover {
         margin-bottom: 0;
     }
 }
+@media screen and (min-width: 992px) {
+    /* -- Special Offer Overlay -- */
+    .spec-offer-overlay {
+        margin-top: -100px;
+        z-index: 3;
+    }
+}
+
 /* Media queries large desktop */
 @media screen and (min-width: 1200px) {
     /* Carousel */
