@@ -169,6 +169,32 @@ a:hover {
     background: #f5f5f5;
 }
 
+/* Row Background images */
+.row-outer-container.bg-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.row-outer-container.bg-img:before {
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.row-outer-container.testimonials {
+    background-image: url(../images/violin-background-1920.jpg);
+}
+/* Cards */
+.card-body {
+    background-color: #f4f4f4;
+}
+.classes-icon {
+    
+}
+
 /*--------------------------------- Buttons ----*/
 .btn {
     border: none;
@@ -176,21 +202,30 @@ a:hover {
     margin-top: 15px;
 }
 .btn-primary {
-    background: #16D9C5;
-    color: #004039;
+    color: #fff;
+    background-color: #BF3D00;
 }
 .btn-primary:hover {
-    color: #fff;
-    background-color: #BF3D00;
-}
-.btn-secondary {
-    color: #fff;
-    background-color: #BF3D00;
-}
-.btn-secondary:hover {
     background: #16D9C5;
     color: #004039;
 }
+.btn-secondary {
+    background: #16D9C5;
+    color: #004039;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #BF3D00;
+}
+.btn-white {
+    background: #fff;
+    color: #008C7E;
+}
+.btn-white:hover {
+    color: #fff;
+    background-color: #BF3D00;
+}
+
 .btn-lg {
     padding: .8rem 2rem;
 }
@@ -198,7 +233,7 @@ a:hover {
 .spec-offer-overlay {
 /*    background-color: #fffcf1;*/
     background-color: #00D9C3;
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,.2);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
 }
 /* -------------------- Contact ----------*/
 .contact-card--icon {
@@ -346,8 +381,12 @@ a:hover {
 @media screen and (min-width: 992px) {
     /* -- Special Offer Overlay -- */
     .spec-offer-overlay {
-        margin-top: -100px;
+        margin-top: -65px;
         z-index: 3;
+    }
+    /* Fix background only on desktop */
+    .bg-fixed {
+        background-attachment: fixed;
     }
 }
 

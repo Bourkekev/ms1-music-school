@@ -164,6 +164,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 - The photos and vectors used in this site were obtained from:
     - https://pixabay.com/
     - https://www.vecteezy.com/
+    - https://unsplash.com/
 - The favicons were generated at https://realfavicongenerator.net/
 
 ### Acknowledgements
