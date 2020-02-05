@@ -53,6 +53,9 @@ h1.carousel-title {
 .navbar-nav {
     text-align: center;
 }
+.navbar-nav .nav-item:last-of-type {
+    margin-bottom: 15px;
+}
 .navbar-nav .nav-item .nav-link {
     color: #008C7E;
     font-family: 'Bebas Neue', cursive;
@@ -158,6 +161,10 @@ footer .logo {
 a {
     color: #008c7e;
 }
+a:hover {
+    color: #41d9c9;
+    text-decoration: none;
+}
 .bg-light-grey {
     background: #f5f5f5;
 }
@@ -250,6 +257,7 @@ a {
 .contact-icons-list .fas {
     margin: 0 1.15em 0 0;/* keep margin relative to font-size */
 }
+/* Social icons */
 .social-icons-list li {
     display: inline-block;
     font-size: 18px;
@@ -273,8 +281,19 @@ a {
     transition: all .3s ease;
 }
 .social-icons-list li a:hover {
-    background-color: red;
+    background-color: #41d9c9;
 }
+.navbar-nav .social-icons-list li a {
+    color: #008C7E;
+    background-color: transparent;
+    width: 30px;
+    height: 40px;
+    line-height: 40px;
+}
+.navbar-nav .social-icons-list li a:hover {
+    color: #004039;
+}
+
 /* ---------------------------------- MEDIA SIZES --------------------*/
 @media screen and (min-width: 768px) {
     h1.page-title {
@@ -306,6 +325,17 @@ a {
     }
     .title-panel {
         padding: 80px 0;
+    }
+    /* nav social icons */
+    .navbar-nav .social-icons-list {
+        margin-left: 25px;
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+            -ms-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+    .navbar-nav .nav-item:last-of-type {
+        margin-bottom: 0;
     }
 }
 /* Media queries large desktop */
