@@ -73,12 +73,12 @@ Also Spotify, currently the largest music streaming service in the world uses gr
     
 As a starting point I took the green from the AirBnb colour scheme, but wanted it darker for the logo, as I felt it was a bit bright. Using illustrator I used brightness in the HSB color and darkened the colour by 10%. Then I put this colour (#008c7e) into [Adobe Color](https://color.adobe.com/create) and I wanted other colour options so chose Complementary, which would give me a contrasting colour. It also gave me a darker (#004039) and brighter green  (#16D9C5) colour. The complementary colour was an orangey-brown colour, though I felt the lighter one was a bit muddy looking so I increased the brightness by 20%. This was the final main colour scheme:
 
-![Colour Scheme](assets/images/color-scheme.adobe.com.png "Colour Scheme")
+![Colour Scheme](design/color-scheme.adobe.com.png "Colour Scheme")
 
 
 Also took the monochromatic variation in case I needed variations on the green:
 
-![Colour Scheme mono](assets/images/color-scheme-monochromatic-adobe.com-2.png "Colour Scheme mono")
+![Colour Scheme mono](design/color-scheme-monochromatic-adobe.com-2.png "Colour Scheme mono")
 
 </details>
 

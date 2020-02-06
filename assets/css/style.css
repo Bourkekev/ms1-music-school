@@ -3,6 +3,7 @@ COLOUR SCHEME
 Complementary - #004039, #16D9C5, #008C7E, #401400, #BF3D00
 Monochromatic - #00D9C3 #309F94 #008C7E #41D9C9 #005950
 */
+/* -------------------- Set Defaults --------*/
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #333;
@@ -31,12 +32,18 @@ h1.page-title {
     letter-spacing: 2px;
     text-align: center;
 }
-h1.carousel-title {
-    font-size: 35px;
+img {
+	max-width: 100%;
+	height: auto;
 }
-.heading {
-    color: #008C7E;
+a {
+    color: #008c7e;
 }
+a:hover {
+    color: #41d9c9;
+    text-decoration: none;
+}
+/* -------------------- END Defaults --------*/
 /* -------------------- HEADER -----------*/
 .full-width-header {
     background-color: #fff;
@@ -119,7 +126,9 @@ footer .logo {
     margin-top: 50px;
 }
 /* --------------------------------- Carousel */
-
+h1.carousel-title {
+    font-size: 35px;
+}
 /* Center the captions vertically */
 .carousel-caption {
     bottom: 50%;
@@ -158,12 +167,8 @@ footer .logo {
     z-index: 2;
 }
 /* --------------------------------- Colours */
-a {
-    color: #008c7e;
-}
-a:hover {
-    color: #41d9c9;
-    text-decoration: none;
+.content-heading {
+    color: #008C7E;
 }
 .bg-light-grey {
     background: #f5f5f5;
@@ -245,7 +250,7 @@ a:hover {
     color: #fff;
     font-size: 14px;
 }
-.full-width-footer .heading,
+.full-width-footer .widget-heading,
 .full-width-footer a {
     color: #41D9C9;
 }
@@ -336,9 +341,16 @@ a:hover {
 
 /* ---------------------------------- MEDIA SIZES --------------------*/
 @media screen and (min-width: 768px) {
+    /* -------------------- Set Defaults --------*/
+    /* Headings */
     h1.page-title {
         font-size: 60px;
     }
+    /*h2.content-heading,*/
+    h2 {
+        font-size: 3rem;
+    }
+    
     /* Nav Branding and Logo */
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
