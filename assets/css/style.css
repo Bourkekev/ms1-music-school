@@ -26,12 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 1px;
 }
-h1.page-title {
-    color: #fff;
-    font-size: 50px;
-    letter-spacing: 2px;
-    text-align: center;
-}
 img {
 	max-width: 100%;
 	height: auto;
@@ -166,14 +160,30 @@ h1.carousel-title {
     position: relative;
     z-index: 2;
 }
-/* --------------------------------- Colours */
+/* Content Headings */
+h1.page-title {
+    color: #fff;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+}
 .content-heading {
     color: #008C7E;
+}
+/* --------------------------------- Colours */
+.text-secondary {
+    color: #BF3D00!important;
 }
 .bg-light-grey {
     background: #f5f5f5;
 }
-
+.lead {
+    color:#005950;
+    font-weight: 600;
+}
+.text-shadow-primary {
+    text-shadow: rgba(0,0,0,0.2) 3px 3px;
+}
 /* Row Background images */
 .row-outer-container.bg-img {
     background-repeat: no-repeat;
@@ -198,6 +208,15 @@ h1.carousel-title {
 }
 .classes-icon {
     
+}
+/* --- Stat Numbers --- */
+.stat-number {
+    font-size: 6rem;
+    font-weight: 900;
+}
+.stat-sub-header {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 /*--------------------------------- Buttons ----*/
@@ -235,9 +254,13 @@ h1.carousel-title {
     padding: .8rem 2rem;
 }
 /* -- Special Offer Overlay -- */
+.bg-light-green,
 .spec-offer-overlay {
 /*    background-color: #fffcf1;*/
-    background-color: #00D9C3;
+/*    background-color: #00D9C3;*/
+    background-color: #41D9C9;
+}
+.spec-offer-overlay {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
 }
 /* -------------------- Contact ----------*/
