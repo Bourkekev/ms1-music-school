@@ -2,6 +2,7 @@
 COLOUR SCHEME
 Complementary - #004039, #16D9C5, #008C7E, #401400, #BF3D00
 Monochromatic - #00D9C3 #309F94 #008C7E #41D9C9 #005950
+Dark blue - #405B78
 */
 /* -------------------- Set Defaults --------*/
 body {
@@ -167,19 +168,24 @@ h1.page-title {
     letter-spacing: 2px;
     text-align: center;
 }
-.content-heading {
+.content-heading,
+.teachers-card .card-title {
     color: #008C7E;
 }
 /* --------------------------------- Colours */
+/* this important is required to overwrite bootstrap's important */
 .text-secondary {
     color: #BF3D00!important;
+}
+.text-dark {
+    color: #405B78!important;
 }
 .bg-light-grey {
     background: #f5f5f5;
 }
 .lead {
     color:#005950;
-    font-weight: 600;
+    font-weight: 700;
 }
 .text-shadow-primary {
     text-shadow: rgba(0,0,0,0.2) 3px 3px;
@@ -206,15 +212,28 @@ h1.page-title {
 .card-body {
     background-color: #f4f4f4;
 }
-.classes-icon {
-    
+.card.teachers-card {
+    border:none;
+}
+.teachers-card .card-body {
+    background: transparent;
+}
+.teachers-card .card-title,
+.teachers-card .card-subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    letter-spacing: normal;
+}
+.teachers-card .card-subtitle {
+    color:#BF3D00;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 /* Rounded image */
 .circle {
-/*    border-radius: 50%;*/
-    border:1px solid red;
+    border-radius: 50%;
+    border:1px solid #BF3D00;
     padding: 10px;
-/*    box-sizing: content-box;*/
 }
 /* --- Stat Numbers --- */
 .stat-number {
@@ -223,7 +242,7 @@ h1.page-title {
 }
 .stat-sub-header {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /*--------------------------------- Buttons ----*/
@@ -368,6 +387,19 @@ h1.page-title {
 .navbar-nav .social-icons-list li a:hover {
     color: #004039;
 }
+.teachers-card .social-icons-list li a {
+    background-color: #BF3D00;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+}
+.teachers-card .social-icons-list li a:hover {
+    background-color: #BF3D00;
+}
+.teachers-card .social-icons-list li {
+    margin: 5px 5px ;
+}
+
 
 /* ---------------------------------- MEDIA SIZES --------------------*/
 @media screen and (min-width: 768px) {
