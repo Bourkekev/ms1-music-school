@@ -153,6 +153,8 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
+## Issues I had to overcome
+When using an image in the Bootstrap card (for Our Teachers), and I applied padding to the image, it caused the image to get squashed horizontally a bit. This was to do with Bootstrap using `display:flex; and flex-direction:column;` on the card. To correct this I wrapped the image in a div, so it was not getting affected directly. 
 
 ## Credits
 

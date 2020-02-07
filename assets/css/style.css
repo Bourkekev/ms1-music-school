@@ -209,6 +209,13 @@ h1.page-title {
 .classes-icon {
     
 }
+/* Rounded image */
+.circle {
+/*    border-radius: 50%;*/
+    border:1px solid red;
+    padding: 10px;
+/*    box-sizing: content-box;*/
+}
 /* --- Stat Numbers --- */
 .stat-number {
     font-size: 6rem;
