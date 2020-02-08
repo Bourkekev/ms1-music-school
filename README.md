@@ -80,6 +80,8 @@ Also took the monochromatic variation in case I needed variations on the green:
 
 ![Colour Scheme mono](design/color-scheme-monochromatic-adobe.com-2.png "Colour Scheme mono")
 
+I found that I needed another dark colour that would work for text on the lighter green becuase the complementory orange colour was quite a start contrast that I did not like. I liked the pastel navy colour that appeared on the Form + Function website because it worked well with their green colour. However I found it was too light and darkened it by 5% to get #3d5671. I checked it against the light green using the colour contrast on [Webaim Contrast Checker](https://webaim.org/resources/contrastchecker/) and it passed the WCAG AA standard for large text. This would be ok as this dark navy text would be quite large and bold.
+
 </details>
 
 #### Language/Tone
