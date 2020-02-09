@@ -125,22 +125,28 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 pt-5 pb-5">
-                        <h2 class="heading mb-4">Send us a quick message</h2>
+                        <h2 class="content-heading mb-4">Send us a quick message</h2>
                             <form>
                                 <div class="row">
                                     <div class="col">
-                                        <label class="form-label" for="fullname">Name</label>
-                                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                                        <div class="form-group">
+                                            <input type="text" name="name" id="fullname" class="form-control" required />
+                                            <label class="form-control-placeholder" for="fullname">Name</label>
+                                        </div>
                                     </div>
                                     <div class="col">
-                                        <label class="form-label" for="email">Email</label>
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                        <div class="form-group">
+                                            <input type="email" name="email" id="email" class="form-control" required />
+                                            <label class="form-control-placeholder" for="email">Email</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <label class="form-label" for="message">Your Message</label>
-                                        <textarea type="textarea" name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+                                        <div class="form-group">
+                                            <textarea name="message" id="message" class="form-control" required></textarea>
+                                            <label class="form-control-placeholder" for="message">Your Message</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -151,13 +157,13 @@
                             </form>
                     </div>
                     <div class="col-md-6 pt-5 pb-5">
-                        <h2 class="heading mb-4">Our Location</h2>
+                        <h2 class="content-heading mb-4">Our Location</h2>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4761.580907470116!2d-6.234520365089151!3d53.36490499874892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDIxJzUzLjciTiA2wrAxMyc0OC41Ilc!5e0!3m2!1sen!2sie!4v1580573928753!5m2!1sen!2sie" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
-        </div>
-    </main><!-- /.container -->
+        </div><!-- /.row-outer -->
+    </main><!-- /.maincontent -->
     <footer class="full-width-footer">
         <div class="container">
             <div class="row">
