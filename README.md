@@ -163,6 +163,8 @@ When using an image in the Bootstrap card (for Our Teachers), and I applied padd
 
 ## Credits
 
+For generating browser prefixes - [Autoprefixer for CSS](https://autoprefixer.github.io/)
+
 ### Content
 - The text for the Quotes section were taken from the [CMuse article ](https://www.cmuse.org/100-famous-and-inspirational-music-quotes/)
 - 
