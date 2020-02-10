@@ -360,6 +360,7 @@ h1.page-title {
 }
 /* -------------------- Forms ----------*/
 /* to allow label to be absolutely positioned */
+
 .form-group {
     position: relative;
     margin-bottom: 1.5rem;
@@ -386,6 +387,10 @@ h1.page-title {
     font-size: 76%;
     transform: translate3d(0, -50%, 0);
     opacity: 1;
+}
+
+.legend {
+    font-size: 16px;
 }
 
 /* -------------------- Footer -----------*/
