@@ -98,7 +98,7 @@
                 <div class="row class-item rounded mb-1 text-center">
                     <div class="col-md-2">
                         <div class="class-icon">
-                            <img src="assets/images/bs-nav-icon-green.svg" />
+                            <img src="assets/images/guitar-icon.svg" />
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -157,8 +157,38 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <label class="form-label" for="message">Your Message</label>
-                                <textarea type="textarea" name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+                                <label class="form-label" for="phone">Phone</label>
+                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone" required />
+                            </div>
+                            <div class="col">
+                                <label for="age-group">Student Age Group</label>
+                                <select id="age-group" class="form-control">
+                                    <option selected>Select age group...</option>
+                                    <option>5 to 12 years</option>
+                                    <option>13 to 18 years</option>
+                                    <option>18+ years</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <fieldset>
+                                    <legend>What instrument(s) are you interested in?</legend>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="guitar-checkbox" value="guitar">
+                                        <label class="form-check-label" for="guitar-checkbox">Guitar</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="piano-checkbox" value="piano">
+                                        <label class="form-check-label" for="piano-checkbox">Piano</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <textarea type="textarea" name="message" id="message" class="form-control" placeholder="Any other comments"></textarea>
+                                <label class="form-label" for="message">Any other comments</label>
                             </div>
                         </div>
                         <div class="row">
@@ -179,7 +209,8 @@
                         <img src="assets/images/music-school-logo-white.svg" alt="Music School logo" class="logo">
                     </div>
                     <div class="footer-text">
-                        <p>Aliquam eget mauris eu felis commodo accumsan nec ut eros. In viverra dui a pharetra porta. Pellentesque quis commodo mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <p>The Music School offers high quality Piano, Guitar, Drums, Violin, Trumpet and Singing lessons in North Dublin. It is our goal to ensure that every student is encouraged to be a passionate and productive musician.</p>
+                        <p><a href="about.html#about-school">Read more...</a></p>
                     </div>
                 </div>
                 <div class="col-sm opening-hours">
