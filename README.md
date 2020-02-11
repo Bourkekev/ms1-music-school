@@ -97,6 +97,7 @@ I wanted the __language__ to be casual and conversational, and not jargony or to
 
 Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).
 
+- Javascript
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 

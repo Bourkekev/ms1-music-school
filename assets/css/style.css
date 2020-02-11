@@ -346,6 +346,7 @@ h1.page-title {
 }
 .class-icon img {
     width: 100px;
+    max-height: 90px;
 }
 .next-term {
     font-size: 14px;
