@@ -191,8 +191,10 @@ h1.page-title {
 }
 .lead {
     color:#005950;
-    font-size: 1.5rem;
     font-weight: 700;
+}
+.lead--larger {
+    font-size: 1.5rem;
 }
 .text-shadow-primary {
     text-shadow: rgba(0,0,0,0.2) 3px 3px;
@@ -222,16 +224,17 @@ h1.page-title {
 .card.teachers-card {
     border:none;
 }
-.teachers-card .card-body {
+.teachers-card .card-body,
+.slide--testimonial .card-body {
     background: transparent;
 }
 .teachers-card .card-title,
-.teachers-card .card-subtitle {
+.card-subtitle {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     letter-spacing: normal;
 }
-.teachers-card .card-subtitle {
+.card-subtitle {
     color:#BF3D00;
     font-size: 1.1rem;
     margin-bottom: 10px;
@@ -241,6 +244,18 @@ h1.page-title {
     border-radius: 50%;
     border:1px solid #BF3D00;
     padding: 10px;
+}
+/* Slide Card Testimonials */
+.slide--testimonial .card-title {
+    color: #BF3D00;
+    font-size: 2.5rem;
+}
+.testimonial-card .card-subtitle {
+    font-size: 1.25rem;
+    color: #008C7E;
+}
+.testimonial-card .fas {
+    color: #16D9C5;
 }
 /* --- Stat Numbers --- */
 .stat-number {
@@ -301,13 +316,12 @@ h1.page-title {
     padding: .8rem 2rem;
 }
 /* -- Special Offer Overlay -- */
-.bg-light-green,
-.spec-offer-overlay {
+.bg-light-green {
 /*    background-color: #fffcf1;*/
 /*    background-color: #00D9C3;*/
     background-color: #41D9C9;
 }
-.spec-offer-overlay {
+.card-shadow-5 {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
 }
 /* -------------------- Classes ----------*/
