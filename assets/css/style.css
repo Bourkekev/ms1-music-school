@@ -138,7 +138,17 @@ h1.carousel-title {
     color: #15d8c5;
     text-transform: uppercase;
 }
-
+.carousel-indicators li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*  TESTIMONIAL CAROUSEL */
+#carouselTestimonials {
+    margin-bottom: 50px;
+}
+#carouselTestimonials .carousel-indicators {
+    bottom: -75px;
+}
 /* Page Title Panel */
 .title-panel {
     background: url(../images/acoustic-guitar-title-panel-1920x250.jpg) center center;
@@ -217,6 +227,13 @@ h1.page-title {
 .row-outer-container.testimonials {
     background-image: url(../images/violin-background-1920.jpg);
 }
+/* Image styling */
+.two-corner-border {
+    box-shadow: 35px 35px 0px -20px #f5f5f5, -35px -35px 0px -20px #f5f5f5, 0 0 0 10px #41d9c9;
+}
+.two-corner-border-on-white {
+    box-shadow: 35px 35px 0px -20px #fff, -35px -35px 0px -20px #fff, 0 0 0 10px #41d9c9;
+}
 /* Cards */
 .card-body {
     background-color: #f4f4f4;
@@ -246,7 +263,11 @@ h1.page-title {
     padding: 10px;
 }
 /* Slide Card Testimonials */
-.slide--testimonial .card-title {
+#carouselTestimonials .carousel-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.testimonial-card .card-title {
     color: #BF3D00;
     font-size: 2.5rem;
 }
@@ -324,7 +345,7 @@ h1.page-title {
 .card-shadow-5 {
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
 }
-/* -------------------- Classes ----------*/
+/* -------------------- Music Classes ----------*/
 .class-item {
     background-color: #fff;
     align-items: center;
@@ -556,6 +577,13 @@ textarea#message {
     h1.carousel-title {
         font-size: 2.5rem;
     }
+    /* Testimonial carousel */
+    #carouselTestimonials .carousel-inner {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Page title */
     .title-panel {
         padding: 80px 0;
     }
