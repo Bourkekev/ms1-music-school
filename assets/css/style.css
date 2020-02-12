@@ -191,6 +191,7 @@ h1.page-title {
 }
 .lead {
     color:#005950;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .text-shadow-primary {
@@ -357,7 +358,7 @@ h1.page-title {
 }
 /* -------------------- Contact ----------*/
 .contact-card--icon {
-    color: #008C7E;
+    color: #BF3D00;
 }
 /* -------------------- Forms ----------*/
 /* to allow label to be absolutely positioned */
@@ -392,6 +393,9 @@ h1.page-title {
 
 .legend {
     font-size: 16px;
+}
+textarea#message {
+    height: 8rem;
 }
 
 /* -------------------- Footer -----------*/
