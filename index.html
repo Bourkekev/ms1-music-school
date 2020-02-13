@@ -42,6 +42,12 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            <ul class="sub-menu d-md-none">
+                                <div class="sub-menu-title">Jump to section</div>
+                                <li class="sub-menu-item">
+                                    <a href="index.html#testimonials">Testimonials</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About Us</a>
@@ -144,8 +150,8 @@
                     <h2 class="content-heading mb-4">Popular Classes</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4 text-center pt-5 pb-5">
+            <div class="row pt-5 pb-5">
+                <div class="col-md-4 text-center py-2">
                     <div class="card">
                         <img src="assets/images/guitar-lesson-510x340.jpg" class="card-img-top" alt="Person playing guitar, getting guitar lessons">
                         <div class="card-body">
@@ -162,9 +168,43 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-4 text-center py-2">
+                    <div class="card">
+                        <img src="assets/images/guitar-lesson-510x340.jpg" class="card-img-top" alt="Person playing guitar, getting guitar lessons">
+                        <div class="card-body">
+                            <h3 class="card-title">Piano Classes</h3>
+                            <p class="card-text">Electric and acoustic guitar lessons for any level of experience, from beginner to advanced. As we 'tailor' each and every course to each student.</p>
+                            <div class="d-block classes-icon">
+                                <i class="far fa-calendar-alt"></i><strong>6 weeks</strong>
+                            </div>
+                            <div class="d-block classes-icon">
+                                <i class="fas fa-money-bill"></i><strong>&euro; 265</strong>
+                            </div>
+                            
+                            <a href="#" class="btn btn-lg btn-primary">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center py-2">
+                    <div class="card">
+                        <img src="assets/images/guitar-lesson-510x340.jpg" class="card-img-top" alt="Person playing guitar, getting guitar lessons">
+                        <div class="card-body">
+                            <h3 class="card-title">Singing Classes</h3>
+                            <p class="card-text">Electric and acoustic guitar lessons for any level of experience, from beginner to advanced. As we 'tailor' each and every course to each student.</p>
+                            <div class="d-block classes-icon">
+                                <i class="far fa-calendar-alt"></i><strong>6 weeks</strong>
+                            </div>
+                            <div class="d-block classes-icon">
+                                <i class="fas fa-money-bill"></i><strong>&euro; 265</strong>
+                            </div>
+                            
+                            <a href="#" class="btn btn-lg btn-primary">Apply</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row">
-                <div class="col text-center pt-5 pb-5">
+                <div class="col text-center pt-0 pb-5">
                     <p><a class="btn btn-lg btn-primary" href="classes.html" role="button">View All Classes</a></p>
                 </div>
             </div>
@@ -227,7 +267,7 @@
             </div>
         </section><!-- /.container -->
         <!-- testimonials -->
-        <section class="row-outer-container bg-light-grey bg-img testimonials bg-fixed">
+        <section id="testimonials" class="row-outer-container bg-light-grey bg-img testimonials bg-fixed">
             <div class="container">
                 <div class="row">
                     <div class="col pt-5 pb-0 text-center">
@@ -241,7 +281,7 @@
                             <ol class="carousel-indicators d-md-none">
                                 <li data-target="#carouselTestimonials" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselTestimonials" data-slide-to="1"></li>
-<!--                                <li data-target="#carouselTestimonials" data-slide-to="2"></li>-->
+                                <li data-target="#carouselTestimonials" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
