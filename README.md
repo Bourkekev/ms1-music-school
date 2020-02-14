@@ -158,6 +158,7 @@ Whenever it is feasible, prefer to automate your tests, and if you've done so, p
 
 I validated the HTML with the [W3 Validation Service](https://validator.w3.org/). There was a warning about lack of a heading inside the first section on the about page. This section contains just some quick statistics about the school (130+ students etc...), but I do not want a heading here, so I decided I could leave this as is because it was just a warning.
 
+TO DO Testing Screen sizes - I ran the website through [Browser Stack](https://www.browserstack.com/) to test on real devices and screen sizes. 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 1. Responsive carousel images:
@@ -185,6 +186,8 @@ To run locally, you can clone this repository directly into the editor of your c
 When using an image in the Bootstrap card (for Our Teachers), and I applied padding to the image, it caused the image to get squashed horizontally a bit. This was to do with Bootstrap using `display:flex; and flex-direction:column;` on the card. To correct this I wrapped the image in a div, so it was not getting affected directly. 
 
 I used a [Favicon Generator](https://realfavicongenerator.net/) to create my favicons which generates many variations for different browsers and devices. It recommends to put these into the website root and some html to put into your page head, but I found on GitHub Pages this did not work. It seems it was looking for the favicon in my account root rather than the project root, so I would need to change the path. So while doing this it made sense to clean up my root folder as the generator created 10 files to put in the root.
+
+On a lot of mobile's, iPhone's and iPad's Safari browser the fixed background does not work, so I have it only set to fix on screen sizes from 992px and bigger.
 
 ## Credits
 
