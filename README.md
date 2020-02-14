@@ -156,6 +156,8 @@ In this section, you need to convince the assessor that you have conducted enoug
 
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
+I validated the HTML with the [W3 Validation Service](https://validator.w3.org/). There was a warning about lack of a heading inside the first section on the about page. This section contains just some quick statistics about the school (130+ students etc...), but I do not want a heading here, so I decided I could leave this as is because it was just a warning.
+
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 1. Responsive carousel images:

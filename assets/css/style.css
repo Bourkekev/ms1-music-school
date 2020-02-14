@@ -38,6 +38,7 @@ a:hover {
     color: #41d9c9;
     text-decoration: none;
 }
+
 /* -------------------- END Defaults --------*/
 /* -------------------- HEADER -----------*/
 .full-width-header {
@@ -394,6 +395,10 @@ h1.page-title {
 /* -------------------- Contact ----------*/
 .contact-card--icon {
     color: #BF3D00;
+}
+iframe.location-map {
+    width: 100%;
+    border: none;
 }
 /* -------------------- Forms ----------*/
 /* to allow label to be absolutely positioned */
