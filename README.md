@@ -64,14 +64,14 @@ This formed the basis of my final wireframes, which were created in Balsamiq:
 - [Contact page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Contact%20-%20Music%20School.png)
 
 ### Surface
-This is the sensory design section of a website, or how it looks, feels and sounds. I wanted the design to be clean and the colour scheme to be light and refreshing. I decided on a pastel green as Green makes you feel optimistic and refreshed, and Green symbolizes health, new beginnings and wealth, according to [this article on 99 designs](https://99designs.ie/blog/tips/how-color-impacts-emotions-and-behaviors/). 
+This is the sensory design section of a website, or how it looks, feels and sounds. I wanted the design to be clean and the colour scheme to be light and refreshing. I decided on a pastel green as Green makes you feel optimistic and refreshed, and Green symbolizes health, new beginnings and wealth, according to [this article on 99 designs](https://99designs.ie/blog/tips/how-color-impacts-emotions-and-behaviors/). This would be my primary colour.
 
 Also Spotify, currently the largest music streaming service in the world uses green in it's logo and designs, which likely represents freshness and vitality, something essential to a music brand. For reference see point 29 here - (https://piktochart.com/blog/inspirational-brand-colors/). However, I did not want it as vibrant or bright as the Spotify green, and leaning more toward the blue spectrum more like AirBnb.
 
 <details>
     <summary> ** For more on how I chose the colour scheme expand this section ** </summary>
     
-As a starting point I took the green from the AirBnb colour scheme, but wanted it darker for the logo, as I felt it was a bit bright. Using illustrator I used brightness in the HSB color and darkened the colour by 10%. Then I put this colour (#008c7e) into [Adobe Color](https://color.adobe.com/create) and I wanted other colour options so chose Complementary, which would give me a contrasting colour. It also gave me a darker (#004039) and brighter green  (#16D9C5) colour. The complementary colour was an orangey-brown colour, though I felt the lighter one was a bit muddy looking so I increased the brightness by 20%. This was the final main colour scheme:
+As a starting point I took the green from the AirBnb colour scheme, but wanted it darker for the logo, as I felt it was a bit bright. Using Illustrator I used brightness in the HSB color and darkened the colour by 10%. Then I put this colour (#008c7e) into [Adobe Color](https://color.adobe.com/create) and I wanted other colour options so chose Complementary, which would give me a contrasting colour. It also gave me a darker (#004039) and brighter green  (#16D9C5) colour. The complementary colour was an orangey-brown colour, though I felt the lighter one was a bit muddy looking so I increased the brightness by 20%. This would be my secondary colour. This was the final main colour scheme:
 
 ![Colour Scheme](design/color-scheme.adobe.com.png "Colour Scheme")
 
@@ -80,12 +80,34 @@ Also took the monochromatic variation in case I needed variations on the green:
 
 ![Colour Scheme mono](design/color-scheme-monochromatic-adobe.com-2.png "Colour Scheme mono")
 
-I found that I needed another dark colour that would work for text on the lighter green becuase the complementory orange colour was quite a start contrast that I did not like. I liked the pastel navy colour that appeared on the Form + Function website because it worked well with their green colour. However I found it was too light and darkened it by 5% to get #3d5671. I checked it against the light green using the colour contrast on [Webaim Contrast Checker](https://webaim.org/resources/contrastchecker/) and it passed the WCAG AA standard for large text. This would be ok as this dark navy text would be quite large and bold.
+I later found that I needed another dark colour that would work for text on the lighter green because white would not provide enough contrast and the complementory orange colour was quite a stark contrast that I did not like. During my research, I liked the pastel navy colour that appeared on a website I liked (that used green), [Form + Function website](https://www.formandfunctionagency.com/) because it worked well with their green colour. However I found it was too light and darkened it by 5% to get #3d5671. I checked it against the light green using the colour contrast on [Webaim Contrast Checker](https://webaim.org/resources/contrastchecker/) and it passed the WCAG AA standard for large text. This would be ok as this dark navy text would be quite large and bold.
 
 </details>
 
 #### Language/Tone
 I wanted the __language__ to be casual and conversational, and not jargony or too technical.
+
+#### Styling considerations
+
+Before beginning development, I listed some styling ideas that I felt would enhance the feel of the site and give a professional touch, which I may want to incorporate. Not all of these were used in the final website.
+
+ - CSS reset - Bootstrap already contains reboot css file for this.
+ - Favicons
+ - Small line above or below nav hover/active state. Uses `:before`
+ - 2 corner border on images, based off a [codepen](https://codepen.io/AZGSKULL/pen/XzLjLE) that I saw, which uses multiple box-shadows.
+ - Restyle Form select element with just CSS
+ - Determine what happens when submit form. Won't submit but give feedback.
+ - Sticky Navigation
+ - Simple transitions on hover states
+ - Bootstrap classes (like hide on mobile) and other features.
+ - Make nav hamburger an X on open. 
+ - Place one add-on or button on either side of a form input [from bootstrap]https://getbootstrap.com/docs/4.4/components/input-group/
+ - Different Icons - https://getbootstrap.com/docs/4.4/extend/icons/
+ - Mobile Nav in from side
+ - Move form label on focus, or hide label accessibly. E.g linkedin, aerlingus, also see https://getbootstrap.com/docs/4.4/examples/floating-labels/ 
+ - Parallax background - https://www.w3schools.com/howto/howto_css_parallax.asp 
+ - Video? Background - https://www.wonder-vision.com/
+
 
 ## Technologies Used
 
@@ -94,12 +116,10 @@ I wanted the __language__ to be casual and conversational, and not jargony or to
 3. Bootstrap CSS Framework
 4. Font Awesome
 5. Google Fonts
-
+6. Javascript - Minor uses of Javascript for enhancing the user experience.
+7. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation.
+    
 Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).
-
-- Javascript
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
 
 ## Features
 
@@ -161,6 +181,8 @@ To run locally, you can clone this repository directly into the editor of your c
 
 ## Issues I had to overcome
 When using an image in the Bootstrap card (for Our Teachers), and I applied padding to the image, it caused the image to get squashed horizontally a bit. This was to do with Bootstrap using `display:flex; and flex-direction:column;` on the card. To correct this I wrapped the image in a div, so it was not getting affected directly. 
+
+I used a [Favicon Generator](https://realfavicongenerator.net/) to create my favicons which generates many variations for different browsers and devices. It recommends to put these into the website root and some html to put into your page head, but I found on GitHub Pages this did not work. It seems it was looking for the favicon in my account root rather than the project root, so I would need to change the path. So while doing this it made sense to clean up my root folder as the generator created 10 files to put in the root.
 
 ## Credits
 
