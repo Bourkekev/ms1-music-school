@@ -22,11 +22,12 @@ There are 2 main goals of the website:
 
 ### Scope
 This section determines what the users should be able to do on the website.
-1. Sign up for a class.
-2. Sign up for a free lesson as a sample.
-3. Find out what music classes does the school do, and what cost.
+1. Enquire about signing up for a class.
+2. Enquire about signing up for a free lesson as a sample.
+3. Find out what music classes the school does, and what cost.
 4. Contact the music school for further information.
 5. Find out where the music school is.
+6. Find out more information about the school and its teachers.
 
 ### Structure
 At this point I started thinking about what information, pages, features, and calls to action were to necessary and how they would be grouped. I have included some basic sketching of ideas:
@@ -124,8 +125,6 @@ Where possible, I tried to use classes that are built into a technology such as 
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
-
 ### Expand the sections below for more info on details
 <details>
   <summary>Creating navbar X to close</summary>
@@ -135,8 +134,8 @@ In this section, you should go over the different parts of your project, and des
 </details>
  
 ### Existing Features
-- Feature 1 - allows users contact the school, by having them fill out the contact form.
-- 
+- Feature 1 - allows users contact the school, by having them fill out the contact form. The form does not work yet as there is no server side script to send the information. I have used the Bootstrap modal (from the documentation) to pop-up when the user clicks the button, so it will at least give some feedback and also demonstrate the Bootstrap modal pop-up.
+- On the classes page, there is a small javascript
 
 #### Minor Features
  - There is a 'Skip to main content' link just inside the body tag for accessibility for screenreaders. The main content is not usually the first thing on a web page. Keyboard and screen reader users generally must navigate a long list of navigation links, sub-lists of links, corporate icons, site searches, and other elements before ever arriving at the main content. This is then hidden from view with the bootstrap class 'sr-only', however when it receives focus from keyboard it becomes visible, by basically reversing the Bootstrap CSS properties on focus. This is based on accessibility recommendations from https://webaim.org/techniques/skipnav/
