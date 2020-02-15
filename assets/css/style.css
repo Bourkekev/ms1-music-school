@@ -450,6 +450,13 @@ iframe.location-map {
 textarea#message {
     height: 8rem;
 }
+/* --- Divider --- */
+.divider-b {
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, transparent 0%, #3d5671 50%, transparent 100%);
+    border-image-slice: 1;
+    border-width: 1px;
+}
 
 /* -------------------- Footer -----------*/
 .full-width-footer {
