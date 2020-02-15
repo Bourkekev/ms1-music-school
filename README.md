@@ -119,7 +119,7 @@ Before beginning development, I listed some styling ideas that I felt would enha
 5. Google Fonts
 6. Javascript - Minor uses of Javascript for enhancing the user experience.
 7. TinyPNG - To keep transparent png sizes to a minimum I used the online png compressing service [TinyPNG](https://tinypng.com/)
-7. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation.
+7. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation. I used a very small jQuery script (global.js) to close the navbar when a sub menu item is click, because the sub mneu items are only used for links to anchor points in the homepage.
     
 Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).
 
@@ -140,10 +140,15 @@ Where possible, I tried to use classes that are built into a technology such as 
 #### Minor Features
  - There is a 'Skip to main content' link just inside the body tag for accessibility for screenreaders. The main content is not usually the first thing on a web page. Keyboard and screen reader users generally must navigate a long list of navigation links, sub-lists of links, corporate icons, site searches, and other elements before ever arriving at the main content. This is then hidden from view with the bootstrap class 'sr-only', however when it receives focus from keyboard it becomes visible, by basically reversing the Bootstrap CSS properties on focus. This is based on accessibility recommendations from https://webaim.org/techniques/skipnav/
 
+- Jump to section for mobile. To get a nice scroll to anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). This property is not fully supported, particularly on Safari (both Mac and iPhone), but it will degrade gracefully and still jump top the anchor point on those devices.
+
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 ##### Form Labels
 I am not a fan of form labels appearing above the input, but they are important for accessibility, for screen-readers and the like. Placeholder text within the input alone is not good enough. Some techniques simply hide the label visually, but are still readable by screen-readers by setting a tiny height and clipping the element. However I have seen forms where the placeholder text moves up when you click inside (or focus on) the input, such as Aer Lingus and LinkedIn. This placeholder text is actually the label and is just positioned over the input and moved when the input is focused on, and stays if there is valid content in the input. Bootstrap has an experimental version of this but it relies on ::placeholder-shown, which is more supported now in latest browsers, but still unsupported in some older browser versions like Edge, IOS Safari and Android. The downside is that you cannot use placeholder text for additional information. 
+
+##### Scroll to anchor point
+To get a nice scroll to anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). Thi
 
 ### Features Left to Implement
 - Another feature idea
@@ -187,9 +192,15 @@ I used a [Favicon Generator](https://realfavicongenerator.net/) to create my fav
 
 On a lot of mobile's, iPhone's and iPad's Safari browser the fixed background does not work, so I have it only set to fix on screen sizes from 992px and bigger.
 
+On mobile, the sub links to the sections in my homepage worked but by default leaves the navbar open so it covers most of the screen. This is not great usability, so I looked for a simple jQuery script that would close the navbar when the anchor links are clicked.
+
 ## Credits
 
 For generating browser prefixes - [Autoprefixer for CSS](https://autoprefixer.github.io/)
+
+The border gradient on the About page under the school stats was inspired by this article on [loxodrome](https://www.loxodrome.io/post/gradient-borders/) and also on [CSS-Tricks](https://css-tricks.com/gradient-borders-in-css/).
+
+I found a way to close the navbar when an anchor point is clicked using jQuery on this [stackoverflow page](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click).
 
 ### Content
 - The text for the Quotes section were taken from the [CMuse article ](https://www.cmuse.org/100-famous-and-inspirational-music-quotes/)

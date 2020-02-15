@@ -5,6 +5,9 @@ Monochromatic - #00D9C3 #309F94 #008C7E #41D9C9 #005950
 Dark blue - #405B78
 */
 /* -------------------- Set Defaults --------*/
+html {
+  scroll-behavior: smooth;
+}
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #333;
