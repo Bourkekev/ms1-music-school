@@ -117,6 +117,7 @@ Before beginning development, I listed some styling ideas that I felt would enha
 4. Font Awesome
 5. Google Fonts
 6. Javascript - Minor uses of Javascript for enhancing the user experience.
+7. TinyPNG - To keep transparent png sizes to a minimum I used the online png compressing service [TinyPNG](https://tinypng.com/)
 7. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation.
     
 Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).

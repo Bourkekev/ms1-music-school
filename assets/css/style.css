@@ -279,6 +279,11 @@ h1.page-title {
 .testimonial-card .fas {
     color: #16D9C5;
 }
+/* --- Classes Card --- */
+.classes-icon {
+    color:#005950;
+}
+
 /* --- Stat Numbers --- */
 .stat-number {
     font-size: 6rem;
@@ -478,6 +483,10 @@ textarea#message {
 .oh-list-item {
     margin-top: 10px;
 }
+/* -------------------------------- Icons ------- */
+.note-icon {
+    width: 34px;
+}
 /* FA Icons */
 .opening-hours .fas {
     float: left;
@@ -488,8 +497,6 @@ textarea#message {
     padding: 0;
 }
 .contact-list-item  {
-/*    font-size: 18px;*/
-    
     margin: 20px 0 0;
     padding: 0;
 }
@@ -607,6 +614,9 @@ textarea#message {
 @media screen and (min-width: 992px) {
     /* -- Special Offer Overlay -- */
     .spec-offer-overlay {
+        background-image: url(../images/musical-notes-corner.png);
+        background-repeat: no-repeat;
+        background-size: 300px 225px;
         margin-top: -65px;
         z-index: 3;
     }
