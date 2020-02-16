@@ -242,7 +242,7 @@ h1.page-title {
 .card-body {
     background-color: #f4f4f4;
 }
-.card.teachers-card {
+.teachers-card {
     border:none;
 }
 .teachers-card .card-body,
@@ -259,6 +259,9 @@ h1.page-title {
     color:#BF3D00;
     font-size: 1.1rem;
     margin-bottom: 10px;
+}
+.teachers-card .card-text {
+    font-size: .85rem;
 }
 /* Rounded image */
 .circle {
