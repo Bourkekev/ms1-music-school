@@ -64,12 +64,13 @@ a:hover {
 }
 .navbar-nav .nav-item .nav-link {
     color: #008C7E;
+    border-bottom: 1px solid rgba(191, 61, 0, 0.45);
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    height: 65px;
-    line-height: 65px;
+    height: 60px;
+    line-height: 60px;
     padding-bottom: 0;
     padding-top: 0;
 }
@@ -98,6 +99,28 @@ a:hover {
 .navbar-light .nav-item.active,
 .navbar-light .nav-link:focus {
     background: rgba(0,0,0,0.1);
+}
+/* --- Sub Menu ---*/
+.sub-menu {
+    border-bottom: 1px solid rgba(191, 61, 0, 0.45);
+    list-style: none;
+    padding: 0;
+}
+.sub-menu-title {
+    padding: 10px 0 12px;
+}
+.sub-menu-item {
+    padding: 5px 0 10px;
+    border-top: 1px dashed #999;
+        font-size: .9rem;
+}
+.sub-menu-item a:before {
+    content: '\f078';
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 16px;
+        line-height: 1;
 }
 
 /* ------------------- Nav Branding and Logo */
@@ -604,6 +627,7 @@ textarea#message {
         background: transparent;
     }
     .navbar-nav .nav-item .nav-link {
+        border-bottom: none;
         height: 100px;
         line-height: 100px;
     }

@@ -176,6 +176,8 @@ I tested the website on the following browsers:
 - Native Browser on Samsung Galaxy S8
 - Chrome on Lenovo 10" Tablet, Android V6
 
+On all of these the site worked fine as expected, except for some minor issues on IE11. Under the Teacher images there was a large space before their name. This was to do with the extra div I added to correct the images being squashed (see the section on Issues I had to overcome). This was easily fixed by giving the div an explicit height of 100%. Also, as I expected the CSS scroll-behaviour property would not work on IE11 or Edge.
+
 TO DO Testing Screen sizes - I ran the website through [Browser Stack](https://www.browserstack.com/) to test on real devices and screen sizes. 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
