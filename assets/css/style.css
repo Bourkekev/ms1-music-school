@@ -263,6 +263,10 @@ h1.page-title {
 .teachers-card .card-text {
     font-size: .85rem;
 }
+/* Fix for internet Explorer */
+.card .img-wrap {
+    height: 100%;
+}
 /* Rounded image */
 .circle {
     border-radius: 50%;
