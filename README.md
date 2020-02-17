@@ -72,7 +72,7 @@ Also Spotify, currently the largest music streaming service in the world uses gr
 <details>
     <summary> ** For more on how I chose the colour scheme expand this section ** </summary>
     
-As a starting point I took the green from the AirBnb colour scheme, but wanted it darker for the logo, as I felt it was a bit bright. Using Illustrator I used brightness in the HSB color and darkened the colour by 10%. Then I put this colour (#008c7e) into [Adobe Color](https://color.adobe.com/create) and I wanted other colour options so chose Complementary, which would give me a contrasting colour. It also gave me a darker (#004039) and brighter green  (#16D9C5) colour. The complementary colour was an orangey-brown colour, though I felt the lighter one was a bit muddy looking so I increased the brightness by 20%. This would be my secondary colour. This was the final main colour scheme:
+As a starting point I took the green from the AirBnb colour scheme, but wanted it darker for the logo, as I felt it was a bit bright. Using Illustrator I used brightness in the HSB color and darkened the colour by 10%. Then I put this colour (#008c7e) into [Adobe Color](https://color.adobe.com/create) and I wanted other colour options so chose Complementary, which would give me a contrasting colour. It also gave me a darker (#004039) and brighter green  (#16D9C5) colour. The complementary colour was an orangey-brown colour, though I felt the lighter one was a bit muddy looking so I increased the brightness by 20%. This would be my secondary colour. This was the final main colour scheme (P.S. see note below where I changed secondary colour slightly):
 
 ![Colour Scheme](design/color-scheme.adobe.com.png "Colour Scheme")
 
@@ -83,6 +83,7 @@ Also took the monochromatic variation in case I needed variations on the green:
 
 I later found that I needed another dark colour that would work for text on the lighter green because white would not provide enough contrast and the complementory orange colour was quite a stark contrast that I did not like. During my research, I liked the pastel navy colour that appeared on a website I liked (that used green), [Form + Function website](https://www.formandfunctionagency.com/) because it worked well with their green colour. However I found it was too light and darkened it by 5% to get #3d5671. I checked it against the light green using the colour contrast on [Webaim Contrast Checker](https://webaim.org/resources/contrastchecker/) and it passed the WCAG AA standard for large text. This would be ok as this dark navy text would be quite large and bold.
 
+Towards the end of the project and having seen it in place, I felt that the secondary colour was too dark and drab, a bit depressing. So I decided I would brighten this colour by 5 percent (in HSL colour). This was the colour used for buttons so it needed to work with white text. I checked the colour again with WebAim Contrast Checker and it would fail at that brightness. I checked the colour when only brightened by 4% and it passed the colour check to WCAG AA standard. So my secondary colour #bf3d00 became #d14200.
 </details>
 
 #### Language/Tone

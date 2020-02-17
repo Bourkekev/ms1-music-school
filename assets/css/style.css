@@ -1,6 +1,6 @@
 /*
 COLOUR SCHEME
-Complementary - #004039, #16D9C5, #008C7E, #401400, #BF3D00
+Complementary - #004039, #16D9C5, #008C7E, #401400, #BF3D00 (#d14200)
 Monochromatic - #00D9C3 #309F94 #008C7E #41D9C9 #005950
 Dark blue - #405B78
 */
@@ -220,7 +220,7 @@ h1.page-title {
 /* --------------------------------- Colours */
 /* this important is required to overwrite bootstrap's important */
 .text-secondary {
-    color: #BF3D00!important;
+    color: #d14200!important;
 }
 .text-dark {
     color: #3d5671!important;
@@ -281,7 +281,7 @@ h1.page-title {
     letter-spacing: normal;
 }
 .card-subtitle {
-    color:#BF3D00;
+    color:#d14200;
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
@@ -295,7 +295,7 @@ h1.page-title {
 /* Rounded image */
 .circle {
     border-radius: 50%;
-    border:1px solid #BF3D00;
+    border:1px solid #d14200;
     padding: 10px;
 }
 /* Slide Card Testimonials */
@@ -304,7 +304,7 @@ h1.page-title {
     padding-right: 10px;
 }
 .testimonial-card .card-title {
-    color: #BF3D00;
+    color: #d14200;
     font-size: 2.5rem;
 }
 .testimonial-card .card-subtitle {
@@ -351,7 +351,7 @@ h1.page-title {
 }
 .btn-primary {
     color: #fff;
-    background-color: #BF3D00;
+    background-color: #d14200;
 }
 .btn-primary:hover {
     background: #16D9C5;
@@ -371,7 +371,7 @@ h1.page-title {
 }
 .btn-secondary:hover {
     color: #fff;
-    background-color: #BF3D00;
+    background-color: #d14200;
 }
 .btn-white {
     background: #fff;
@@ -379,7 +379,7 @@ h1.page-title {
 }
 .btn-white:hover {
     color: #fff;
-    background-color: #BF3D00;
+    background-color: #d14200;
 }
 
 .btn-lg {
@@ -442,7 +442,7 @@ h1.page-title {
 }
 /* -------------------- Contact ----------*/
 .contact-card--icon {
-    color: #BF3D00;
+    color: #d14200;
 }
 iframe.location-map {
     width: 100%;
@@ -590,7 +590,7 @@ textarea#message {
     color: #004039;
 }
 .teachers-card .social-icons-list li a {
-    background-color: #BF3D00;
+    background-color: #d14200;
     width: 32px;
     height: 32px;
     line-height: 30px;
