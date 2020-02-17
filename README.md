@@ -65,7 +65,7 @@ This formed the basis of my final wireframes, which were created in Balsamiq:
 - [Contact page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Contact%20-%20Music%20School.png)
 
 ### Surface
-This is the sensory design section of a website, or how it looks, feels and sounds. I wanted the design to be clean and the colour scheme to be light and refreshing. I created a moodboard from research of colours, styles and components that I liked the look of. You can see that [moodboard here](https://github.com/Bourkekev/ms1-music-school/blob/master/design/ms1-moodboard.jpg)
+This is the sensory design section of a website, or how it looks, feels and sounds. I wanted the design to be clean and the colour scheme to be light and refreshing. I created a moodboard with Adobe Spark from research of colours, styles and components to visually illustrate the style I wished to pursue. You can see that [moodboard here.](https://github.com/Bourkekev/ms1-music-school/blob/master/design/ms1-moodboard.jpg)
 
 I decided on a pastel green as Green makes you feel optimistic and refreshed, and Green symbolizes health, new beginnings and wealth, according to [this article on 99 designs](https://99designs.ie/blog/tips/how-color-impacts-emotions-and-behaviors/). This would be my primary colour.
 
