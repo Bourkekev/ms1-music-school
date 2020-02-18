@@ -687,3 +687,26 @@ textarea#message {
         font-size: 4rem;
     }
 }
+/* Media queries for XXL size */
+@media (min-width: 1440px) {
+    /* create largest padding options for xxl screen size, bootstrap format */
+    .p-xxl-5 {
+        padding: 3rem !important;
+    }
+    .pt-xxl-5,
+    .py-xxl-5 {
+        padding-top: 3rem !important;
+    }
+    .pr-xxl-5,
+    .px-xxl-5 {
+        padding-right: 3rem !important;
+    }
+    .pb-xxl-5,
+    .py-xxl-5 {
+        padding-bottom: 3rem !important;
+    }
+    .pl-xxl-5,
+    .px-xxl-5 {
+        padding-left: 3rem !important;
+    }
+}
