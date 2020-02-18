@@ -71,12 +71,17 @@ a:hover {
     padding-bottom: 0;
     padding-top: 0;
 }
+.navbar-nav .home .nav-link {
+    border: none;
+    height: 50px;
+}
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover {
     color: #004039;
 }
-.nav-item .nav-link:after {
+.nav-item .nav-link:after,
+.nav-item.active .sub-menu:after {
     background-color: #008C7E;
     display: block;
     content: '';
@@ -92,6 +97,17 @@ a:hover {
     height: 4px;
     opacity: 1;
 }
+/* Hide home indicator on mobile*/
+.nav-item.home.active .nav-link:after,
+.nav-item.home:hover .nav-link:after {
+    height: 0;
+    opacity: 0;
+}
+/* Show home indicator after sub-menu */
+.nav-item.active .sub-menu:after {
+    height: 4px;
+    opacity: 1;
+}
 
 .navbar-light .nav-item.active,
 .navbar-light .nav-link:focus {
@@ -104,7 +120,7 @@ a:hover {
     padding: 0;
 }
 .sub-menu-title {
-    padding: 10px 0 10px;
+    padding: 0 0 10px;
     font-size: .8rem;
     text-transform: uppercase;
 }
@@ -638,6 +654,12 @@ textarea#message {
         height: 100px;
         line-height: 100px;
     }
+    /* Show home indicator on tablet up */
+    .nav-item:first-of-type.active .nav-link:after,
+    .nav-item:first-of-type:hover .nav-link:after {
+        height: 4px;
+        opacity: 1;
+    }
     /* Carousel */
     #maincontent {
         margin-top: 100px;
@@ -690,6 +712,10 @@ textarea#message {
     /* Carousel */
     h1.carousel-title {
         font-size: 4rem;
+    }
+    /* make bs display-3 larger */
+    .display-3 {
+        font-size: 6rem;
     }
 }
 /* Media queries for XXL size */
