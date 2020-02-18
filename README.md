@@ -72,8 +72,8 @@ I decided on a pastel green as Green makes you feel optimistic and refreshed, an
 Also Spotify, currently the largest music streaming service in the world uses green in it's logo and designs, which likely represents freshness and vitality, something essential to a music brand. For reference see point 29 here - (https://piktochart.com/blog/inspirational-brand-colors/). However, I did not want it as vibrant or bright as the Spotify green, and leaning more toward the blue spectrum more like AirBnb.
 
 <details>
-    <summary> ** For more on how I chose the colour scheme expand this section ** </summary>
-    
+    <summary><strong>For more on how I chose the colour scheme expand this section</strong></summary>
+
 As a starting point I took the green from the AirBnb colour scheme, but wanted it darker for the logo, as I felt it was a bit bright. Using Illustrator I used brightness in the HSB color and darkened the colour by 10%. Then I put this colour (#008c7e) into [Adobe Color](https://color.adobe.com/create) and I wanted other colour options so chose Complementary, which would give me a contrasting colour. It also gave me a darker (#004039) and brighter green  (#16D9C5) colour. The complementary colour was an orangey-brown colour, though I felt the lighter one was a bit muddy looking so I increased the brightness by 20%. This would be my secondary colour. This was the final main colour scheme (P.S. see note below where I changed secondary colour slightly):
 
 ![Colour Scheme](design/color-scheme.adobe.com.png "Colour Scheme")
@@ -122,7 +122,7 @@ Before beginning development, I listed some styling ideas that I felt would enha
 5. Google Fonts
 6. Javascript - Minor uses of Javascript for enhancing the user experience.
 7. TinyPNG - To keep transparent png sizes to a minimum I used the online png compressing service [TinyPNG](https://tinypng.com/)
-7. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation. I used a very small jQuery script (global.js) to close the navbar when a sub menu item is click, because the sub mneu items are only used for links to anchor points in the homepage.
+7. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation. I used a very small jQuery script (global.js) to close the navbar when a sub menu item is clicked, because the sub menu items are only used for links to anchor points in the homepage.
     
 Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).
 
@@ -148,7 +148,7 @@ Where possible, I tried to use classes that are built into a technology such as 
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
 ##### Form Labels
-I am not a fan of form labels appearing above the input, but they are important for accessibility, for screen-readers and the like. Placeholder text within the input alone is not good enough. Some techniques simply hide the label visually, but are still readable by screen-readers by setting a tiny height and clipping the element. However I have seen forms where the placeholder text moves up when you click inside (or focus on) the input, such as Aer Lingus and LinkedIn. This placeholder text is actually the label and is just positioned over the input and moved when the input is focused on, and stays if there is valid content in the input. Bootstrap has an experimental version of this but it relies on ::placeholder-shown, which is more supported now in latest browsers, but still unsupported in some older browser versions like Edge, IOS Safari and Android. The downside is that you cannot use placeholder text for additional information. 
+I am not a fan of form labels appearing above the input, but they are important for accessibility, for screen-readers and the like. Placeholder text within the input alone is not good enough. Some techniques just use placeholder text and simply hide the label visually, but are still readable by screen-readers by setting a tiny height and clipping the element. This is fine but the placeholder text disappears once the field receives some input. So looking back over a somewhat long form can make it difficult to know what each form field was for. However I have seen forms where the placeholder text moves up when you click inside (or focus on) the input, such as Aer Lingus and LinkedIn. This placeholder text is actually the label and is just positioned over the input and moved when the input is focused on, and stays if there is valid content in the input. Bootstrap has an experimental version of this but it relies on ::placeholder-shown, which is more supported now in latest browsers, but still unsupported in some older browser versions like Edge, IOS Safari and Android. The downside is that you cannot use placeholder text for additional information. 
 
 ##### Scroll to anchor point
 To get a nice scroll to anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). Thi

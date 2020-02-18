@@ -1,9 +1,4 @@
-/*
-COLOUR SCHEME
-Complementary - #004039, #16D9C5, #008C7E, #401400, #BF3D00 (#d14200)
-Monochromatic - #00D9C3 #309F94 #008C7E #41D9C9 #005950
-Dark blue - #405B78
-*/
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 /* -------------------- Set Defaults --------*/
 html {
   scroll-behavior: smooth;
@@ -23,7 +18,8 @@ body {
     background: #fff;
     z-index: 100000;
     text-decoration: none;
-    box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
+            box-shadow: 0 0 2px 2px rgba(0,0,0,.5);
 }
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -46,7 +42,8 @@ a:hover {
 /* -------------------- HEADER -----------*/
 .full-width-header {
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, .5) 0 2px 5px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, .5) 0 2px 5px 0px;
+            box-shadow: rgba(0, 0, 0, .5) 0 2px 5px 0px;
 }
 /* NAV BAR adjustments to bootstrap navbar */
 .navbar {
@@ -258,10 +255,12 @@ h1.page-title {
 }
 /* Image styling */
 .two-corner-border {
-    box-shadow: 35px 35px 0px -20px #f5f5f5, -35px -35px 0px -20px #f5f5f5, 0 0 0 10px #41d9c9;
+    -webkit-box-shadow: 35px 35px 0px -20px #f5f5f5, -35px -35px 0px -20px #f5f5f5, 0 0 0 10px #41d9c9;
+            box-shadow: 35px 35px 0px -20px #f5f5f5, -35px -35px 0px -20px #f5f5f5, 0 0 0 10px #41d9c9;
 }
 .two-corner-border-on-white {
-    box-shadow: 35px 35px 0px -20px #fff, -35px -35px 0px -20px #fff, 0 0 0 10px #41d9c9;
+    -webkit-box-shadow: 35px 35px 0px -20px #fff, -35px -35px 0px -20px #fff, 0 0 0 10px #41d9c9;
+            box-shadow: 35px 35px 0px -20px #fff, -35px -35px 0px -20px #fff, 0 0 0 10px #41d9c9;
 }
 /* Cards */
 .card-body {
@@ -335,7 +334,6 @@ h1.page-title {
     text-transform: uppercase;
     margin-top: 15px;
     -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-       -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
             box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -358,7 +356,8 @@ h1.page-title {
     color: #004039;
 }
 .btn-primary.focus, .btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(22,217,197,.25);
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(22,217,197,.25);
+            box-shadow: 0 0 0 0.2rem rgba(22,217,197,.25);
 }
 .btn-primary:not(:disabled):not(.disabled):active {
     color: #fff;
@@ -387,17 +386,18 @@ h1.page-title {
 }
 /* -- Special Offer Overlay -- */
 .bg-light-green {
-/*    background-color: #fffcf1;*/
-/*    background-color: #00D9C3;*/
     background-color: #41D9C9;
 }
 .card-shadow-5 {
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
 }
 /* -------------------- Music Classes ----------*/
 .class-item {
     background-color: #fff;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
     -webkit-transition: all .2s ease-in-out;
          -o-transition: all .2s ease-in-out;
@@ -405,7 +405,6 @@ h1.page-title {
 }
 .class-item:hover {
     -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
-       -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
             box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
     -webkit-transform: scale(1.01);
         -ms-transform: scale(1.01);
@@ -450,7 +449,6 @@ iframe.location-map {
 }
 /* -------------------- Forms ----------*/
 /* to allow label to be absolutely positioned */
-
 .form-group {
     position: relative;
     margin-bottom: 1.5rem;
@@ -465,17 +463,21 @@ iframe.location-map {
     top: 10px;
     left: 12px;
     padding: 0;
+    -webkit-transition: all 200ms;
+    -o-transition: all 200ms;
     transition: all 200ms;
     opacity: 0.5;
 }
 .form-control:focus {
     border-color: #16D9C5;
-    box-shadow: 0 0 0 0.1rem rgba(22, 217, 197, .25);
+    -webkit-box-shadow: 0 0 0 0.1rem rgba(22, 217, 197, .25);
+            box-shadow: 0 0 0 0.1rem rgba(22, 217, 197, .25);
 }
 .form-control:focus + .form-control-placeholder,
 .form-control:valid + .form-control-placeholder {
     font-size: 76%;
-    transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
     opacity: 1;
 }
 
@@ -485,10 +487,13 @@ iframe.location-map {
 textarea#message {
     height: 8rem;
 }
+
 /* --- Divider --- */
 .divider-b {
     border-bottom: 5px solid;
-    border-image: linear-gradient(to right, transparent 0%, #3d5671 50%, transparent 100%);
+    -o-border-image: -o-linear-gradient(left, transparent 0%, #3d5671 50%, transparent 100%);
+       border-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, #3d5671), to(transparent));
+       border-image: linear-gradient(to right, transparent 0%, #3d5671 50%, transparent 100%);
     border-image-slice: 1;
     border-width: 1px;
 }
@@ -565,15 +570,15 @@ textarea#message {
     display: inline-block;
     width: 40px;
     height: 40px;
-    -webkit-border-radius: 50%;
 /*    -webkit-background-clip: padding-box;*/
-    -moz-border-radius: 50%;
 /*    -moz-background-clip: padding;*/
     border-radius: 50%;
 /*    background-clip: padding-box;*/
     text-align: center;
     line-height: 40px;
     font-size: 24px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
     transition: all .3s ease;
 }
 .social-icons-list li a:hover {

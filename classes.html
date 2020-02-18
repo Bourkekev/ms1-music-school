@@ -275,27 +275,35 @@
                     <form id="class-enquiry">
                         <div class="row">
                             <div class="col">
-                                <label class="form-label" for="fullname">Name</label>
-                                <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                                <div class="form-group">
+                                    <input type="text" name="name" id="fullname" class="form-control" required />
+                                    <label class="form-control-placeholder" for="fullname">Name</label>
+                                </div>
                             </div>
                             <div class="col">
-                                <label class="form-label" for="email">Email</label>
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" required />
+                                    <label class="form-control-placeholder" for="email">Email</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <label class="form-label" for="phone">Phone</label>
-                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone" required />
+                                <div class="form-group">
+                                    <input type="text" name="phone" id="phone" class="form-control" required />
+                                    <label class="form-control-placeholder" for="phone">Phone</label>
+                                </div>
                             </div>
                             <div class="col">
-                                <label for="age-group">Student Age Group</label>
-                                <select id="age-group" class="form-control">
-                                    <option selected>Select age group...</option>
-                                    <option>5 to 12 years</option>
-                                    <option>13 to 18 years</option>
-                                    <option>18+ years</option>
-                                </select>
+                                <div class="form-group">
+                                    <select id="age-group" name="age-group" class="form-control" required>
+                                        <option selected>Student age group...</option>
+                                        <option>5 to 12 years</option>
+                                        <option>13 to 18 years</option>
+                                        <option>18+ years</option>
+                                    </select>
+                                    <label class="form-control-placeholder sr-only" for="age-group">Student Age Group</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -331,8 +339,10 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <textarea name="message" id="message" class="form-control" placeholder="Any other comments"></textarea>
-                                <label class="form-label" for="message">Any other comments</label>
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="form-control" required></textarea>
+                                    <label class="form-control-placeholder" for="message">Any other comments</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
