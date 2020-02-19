@@ -282,9 +282,6 @@ h1.page-title {
 .card-body {
     background-color: #f4f4f4;
 }
-.teachers-card {
-    border:none;
-}
 .teachers-card .card-body,
 .slide--testimonial .card-body {
     background: transparent;
@@ -303,6 +300,19 @@ h1.page-title {
 .teachers-card .card-text {
     font-size: .85rem;
 }
+/* Teachers Card image - The width of the image is 70% of its container, then to move it up so it sticks exactly half out of the container, the negative margin must be -35% as this is half of 70%. The percentage (even top and bottom margin) is calculated with respect to the width of the generated box’s containing block. */
+.teachers-card .img-wrap {
+    background-color: #fff;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -35%;
+}
+/* counters the negative top margin on img-wrap */
+.teachers-card {
+    margin-top: 35%;
+    background: #f4f4f4;
+}
 /* Fix for internet Explorer */
 .card .img-wrap {
     height: 100%;
@@ -310,8 +320,11 @@ h1.page-title {
 /* Rounded image */
 .circle {
     border-radius: 50%;
-    border:1px solid #d14200;
     padding: 10px;
+}
+.circle-border {
+    border-radius: 50%;
+    border:1px solid #d14200;
 }
 /* Slide Card Testimonials */
 #carouselTestimonials .carousel-item {
@@ -403,6 +416,10 @@ h1.page-title {
 /* -- Special Offer Overlay -- */
 .bg-light-green {
     background-color: #41D9C9;
+}
+.card-shadow-2 {
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
+            box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.3);
 }
 .card-shadow-5 {
     -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
