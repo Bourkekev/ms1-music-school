@@ -331,16 +331,20 @@ h1.page-title {
     padding-left: 10px;
     padding-right: 10px;
 }
+.testimonial-card {
+    background-color: transparent;
+    border:none;
+}
 .testimonial-card .card-title {
     color: #d14200;
     font-size: 2.5rem;
 }
+.testimonial-card .fas,
+.testimonial-card .card-subtitle {
+    color: #16D9C5;
+}
 .testimonial-card .card-subtitle {
     font-size: 1.25rem;
-    color: #008C7E;
-}
-.testimonial-card .fas {
-    color: #16D9C5;
 }
 /* --- Classes Card --- */
 .classes-icon {
