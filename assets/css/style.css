@@ -578,6 +578,9 @@ textarea#message {
 .social-icons-list li {
     display: inline-block;
     font-size: 18px;
+    margin: 5px 5px 0 0;
+}
+.navbar-nav .social-icons-list li {
     margin: 5px 15px 0 15px;
 }
 .social-icons-list li a {
@@ -685,7 +688,7 @@ textarea#message {
             -ms-transform: translateY(50%);
                 transform: translateY(50%);
     }
-    .social-icons-list li {
+    .navbar-nav .social-icons-list li {
         margin: 5px 5px 0 0;
     }
     .navbar-nav .nav-item:last-of-type {
