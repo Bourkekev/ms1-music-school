@@ -114,12 +114,13 @@ a:hover {
     height: 4px;
     opacity: 1;
 }
-.navbar-light .nav-item.active:not(.home),
+.navbar-light .nav-item.active,
 .navbar-light .nav-link:focus {
     background: rgba(0,0,0,0.1);
     border-bottom-color: transparent;
 }
-/* -- Change dropdown caret -- */
+/* -- Change BS dropdown caret 
+credit to this method on StackOverflow - https://stackoverflow.com/questions/54396053/how-to-replace-bootstrap-dropdown-toggle-icon-with-another-default-icon -- */
 .dropdown-toggle {
     padding: 10px;
 }
