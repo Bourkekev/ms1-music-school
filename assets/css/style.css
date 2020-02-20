@@ -113,29 +113,56 @@ a:hover {
 .navbar-light .nav-link:focus {
     background: rgba(0,0,0,0.1);
 }
+/* -- Change dropdown caret -- */
+.dropdown-toggle {
+    padding: 10px;
+}
+a.dropdown-toggle {
+    color: #008c7e;
+    margin-left: 10px;
+    width: 35px;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  width: .6em;
+  height: .6em;
+  margin: -.5em 0 0 0;
+  vertical-align: middle;
+  content: "";
+  border: .4em solid;
+  border-width: 0 2px 2px 0;
+  transform: rotateZ(45deg);
+    -webkit-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+}
+.dropdown.show .dropdown-toggle::after {
+    transform: rotateZ(-135deg);
+}
 /* --- Sub Menu ---*/
 .sub-menu {
     border-bottom: 1px solid rgba(191, 61, 0, 0.45);
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 .sub-menu-title {
-    padding: 0 0 10px;
+    padding: 6px 0 6px;
     font-size: .8rem;
     text-transform: uppercase;
 }
 .sub-menu-item {
     padding: 5px 0 10px;
     border-top: 1px dashed #999;
-        font-size: .9rem;
+    font-size: .9rem;
 }
 .sub-menu-item a:before {
-    content: '\f078';
+    content: '\f3be';
     display: block;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    font-size: 16px;
-        line-height: 1;
+    font-size: 11px;
+    line-height: 1;
 }
 
 /* ------------------- Nav Branding and Logo ---*/
