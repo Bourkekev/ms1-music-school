@@ -58,10 +58,13 @@ a:hover {
 }
 .navbar-nav .nav-item:last-of-type {
     margin-bottom: 15px;
+    border-bottom: none;
+}
+.navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(191, 61, 0, 0.45);
 }
 .navbar-nav .nav-item .nav-link {
     color: #008C7E;
-    border-bottom: 1px solid rgba(191, 61, 0, 0.45);
     font-family: 'Bebas Neue', cursive;
     font-size: 18px;
     text-transform: uppercase;
@@ -73,15 +76,14 @@ a:hover {
 }
 .navbar-nav .home .nav-link {
     border: none;
-    height: 50px;
+    height: 60px;
 }
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover {
     color: #004039;
 }
-.nav-item .nav-link:after,
-.nav-item.active .sub-menu:after {
+.nav-item .nav-link:after {
     background-color: #008C7E;
     display: block;
     content: '';
@@ -103,15 +105,19 @@ a:hover {
     height: 0;
     opacity: 0;
 }
+/* change how border indicator works on home page when active */
+.nav-item.home.active {
+    border-bottom: solid 4px #008C7E;
+}
 /* Show home indicator after sub-menu */
 .nav-item.active .sub-menu:after {
     height: 4px;
     opacity: 1;
 }
-
-.navbar-light .nav-item.active,
+.navbar-light .nav-item.active:not(.home),
 .navbar-light .nav-link:focus {
     background: rgba(0,0,0,0.1);
+    border-bottom-color: transparent;
 }
 /* -- Change dropdown caret -- */
 .dropdown-toggle {
@@ -141,6 +147,7 @@ a.dropdown-toggle {
 }
 /* --- Sub Menu ---*/
 .sub-menu {
+    background-color: transparent;
     border-bottom: 1px solid rgba(191, 61, 0, 0.45);
     list-style: none;
     padding: 0;
@@ -700,6 +707,11 @@ textarea#message {
         border-bottom: none;
         height: 100px;
         line-height: 100px;
+    }
+    /* hide mobile border indicator homepage */
+    .nav-item.home.active,
+    .navbar-nav .nav-item {
+        border-bottom: none;
     }
     /* Show home indicator on tablet up */
     .nav-item:first-of-type.active .nav-link:after,

@@ -214,6 +214,10 @@ On a lot of mobile's, iPhone's and iPad's Safari browser the fixed background do
 
 On mobile, the sub links to the sections in my homepage worked but by default leaves the navbar open so it covers most of the screen. This is not great usability, so I looked for a simple jQuery script that would close the navbar when the anchor links are clicked.
 
+My mentor suggested anchor links for the homepage on the mobile navigation, so users could jump to section on the homepage if it otherwise required a lot of scrolling. I would normally not have a dropdown under Home, and when I applied the default bootstrap dropdown, it disabled the home link. Obviously I could not have a home link that did not work so was originally going to have the sub-menu but leave it open. But I was not happy with this either as I feared it would not be obvious that these were links to sections on the homepage, as it looked overly complicated, and test users said the same. So I decided to put a new link beside home that would act as the dropdown toggle. This is more obvious now and cleans up the mobile navigation. See the following image for comparison:
+
+![Sub nav issue](design/sub-nav-before-after.jpg "Sub nav issue")
+
 ## Credits
 
 For generating browser prefixes - [Autoprefixer for CSS](https://autoprefixer.github.io/)

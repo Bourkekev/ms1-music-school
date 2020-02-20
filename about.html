@@ -41,9 +41,12 @@
 
                 <div class="collapse navbar-collapse" id="navbars">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item home">
-                            <a class="nav-link" href="index.html">Home</a>
-                            <ul class="sub-menu d-md-none">
+                        <li class="nav-item dropdown home">
+                            <a class="nav-link d-inline-block" href="index.html">Home</a>
+                            <!-- arrow link after home -->
+                            <a class="dropdown-toggle d-inline-block d-md-none" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Jump to section</span></a>
+                            <!-- sub menu -->
+                            <ul class="dropdown-menu sub-menu d-md-none" aria-labelledby="navbarDropdown">
                                 <li class="sub-menu-title">Jump to section</li>
                                 <li class="sub-menu-item">
                                     <a class="sub-nav-link" href="index.html#popular">Popular Classes</a>
