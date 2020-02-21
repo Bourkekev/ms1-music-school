@@ -72,7 +72,7 @@ I decided on a pastel green as Green makes you feel optimistic and refreshed, an
 Also Spotify, currently the largest music streaming service in the world uses green in it's logo and designs, which likely represents freshness and vitality, something essential to a music brand. For reference see point 29 here - (https://piktochart.com/blog/inspirational-brand-colors/). However, I did not want it as vibrant or bright as the Spotify green, and leaning more toward the blue spectrum more like AirBnb.
 
 <details>
-    <summary> __For more on how I chose the colour scheme expand this section__ </summary>
+    <summary><strong>For more on how I chose the colour scheme expand this section</strong></summary>
 
 As a starting point I took the green from the AirBnb colour scheme, but wanted it darker for the logo, as I felt it was a bit bright. Using Illustrator I used brightness in the HSB color and darkened the colour by 10%. Then I put this colour (#008c7e) into [Adobe Color](https://color.adobe.com/create) and I wanted other colour options so chose Complementary, which would give me a contrasting colour. It also gave me a darker (#004039) and brighter green  (#16D9C5) colour. The complementary colour was an orangey-brown colour, though I felt the lighter one was a bit muddy looking so I increased the brightness by 20%. This would be my secondary colour. This was the final main colour scheme (P.S. see note below where I changed secondary colour slightly):
 
@@ -105,7 +105,7 @@ Before beginning development, I listed some styling ideas that I felt would enha
  - Simple transitions on hover states
  - Bootstrap classes (like hide on mobile) and other features.
  - Make nav hamburger an X on open. 
- - Place one add-on or button on either side of a form input [from bootstrap]https://getbootstrap.com/docs/4.4/components/input-group/
+ - Place one add-on or button on either side of a form input [from bootstrap](https://getbootstrap.com/docs/4.4/components/input-group/)
  - Different Icons - https://getbootstrap.com/docs/4.4/extend/icons/
  - Mobile Nav in from side
  - Move form label on focus, or hide label accessibly. E.g linkedin, aerlingus, also see https://getbootstrap.com/docs/4.4/examples/floating-labels/ 
@@ -153,8 +153,13 @@ I am not a fan of form labels appearing above the input, but they are important 
 ##### Scroll to anchor point
 To get a nice scroll to anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). Thi
 
-### Features Left to Implement
-- Another feature idea
+### Features to consider implementing in the future
+ - Social Media feed, Instagram, Twitter
+ - Online booking or payment for a class
+ - Pages about each instrument
+ - Blog or Latest News
+ - Video(s) of students playing instruments
+
 
 ## Testing
 
@@ -208,19 +213,40 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/Bourkekev/ms1-music-school.git` into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
 
 ## Issues I had to overcome
-When using an image in the Bootstrap card (for Our Teachers), and I applied padding to the image, it caused the image to get squashed horizontally a bit. This was to do with Bootstrap using `display:flex; and flex-direction:column;` on the card. To correct this I wrapped the image in a div, so it was not getting affected directly. 
+ - When using an image in the Bootstrap card (for Our Teachers), and I applied padding to the image, it caused the image to get squashed horizontally a bit. This was to do with Bootstrap using `display:flex; and flex-direction:column;` on the card. To correct this I wrapped the image in a div, so it was not getting affected directly. 
+ 
 
-I used a [Favicon Generator](https://realfavicongenerator.net/) to create my favicons which generates many variations for different browsers and devices. It recommends to put these into the website root and some html to put into your page head, but I found on GitHub Pages this did not work. It seems it was looking for the favicon in my account root rather than the project root, so I would need to change the path. So while doing this it made sense to clean up my root folder as the generator created 10 files to put in the root.
+ - I used a [Favicon Generator](https://realfavicongenerator.net/) to create my favicons which generates many variations for different browsers and devices. It recommends to put these into the website root and some html to put into your page head, but I found on GitHub Pages this did not work. It seems it was looking for the favicon in my account root rather than the project root, so I would need to change the path. So while doing this it made sense to clean up my root folder as the generator created 10 files to put in the root.
+ 
 
-On a lot of mobile's, iPhone's and iPad's Safari browser the fixed background does not work, so I have it only set to fix on screen sizes from 992px and bigger.
+ - On a lot of mobile's, iPhone's and iPad's Safari browser the fixed background does not work, so I have it only set to fix on screen sizes from 992px and bigger.
+ 
 
-On mobile, the sub links to the sections in my homepage worked but by default leaves the navbar open so it covers most of the screen. This is not great usability, so I looked for a simple jQuery script that would close the navbar when the anchor links are clicked.
-
-My mentor suggested anchor links for the homepage on the mobile navigation, so users could jump to section on the homepage if it otherwise required a lot of scrolling. I would normally not have a dropdown under Home, and when I applied the default bootstrap dropdown, it disabled the home link. Obviously I could not have a home link that did not work so was originally going to have the sub-menu but leave it open. But I was not happy with this either as I feared it would not be obvious that these were links to sections on the homepage, as it looked overly complicated, and test users said the same. So I decided to put a new link beside home that would act as the dropdown toggle. This is more obvious now and cleans up the mobile navigation. See the following image for comparison:
+ - My mentor suggested anchor links for the homepage on the mobile navigation, so users could jump to section on the homepage if it otherwise required a lot of scrolling. I would normally not have a dropdown under Home, and when I applied the default bootstrap dropdown, it disabled the home link. Obviously I could not have a home link that did not work so was originally going to have the sub-menu but leave it open. But I was not happy with this either as I feared it would not be obvious that these were links to sections on the homepage, as it looked overly complicated, and test users said the same. So I decided to put a new link beside home that would act as the dropdown toggle. This is more obvious now and cleans up the mobile navigation. See the following image for comparison:
 
 ![Sub nav issue](design/sub-nav-before-after.jpg "Sub nav issue")
 
+ - On mobile, the sub-menu anchor links to the sections in my homepage worked but by default leaves the navbar open so it covers most of the screen. This is not great usability, so I looked for a simple jQuery script that would close the navbar when the anchor links are clicked.
+ 
 ## Credits
+
+### Design and Research
+
+The following sites are websites that I used for reference:
+ - https://solfeggio.cmsmasters.net/contacts/
+ - http://www.churchtownschoolofmusic.ie/
+ - http://www.themusicroom.ie/
+ - https://portmarnockschoolofmusic.com/ 
+ - http://www.msom.ie/ 
+ - http://www.ncdms.ie/ 
+ - https://www.dublinschoolofmusic.com/
+ - [Colour and emotions](https://99designs.ie/blog/tips/how-color-impacts-emotions-and-behaviors/)
+ - [Nice clean colour scheme with greens and orange](https://www.formandfunctionagency.com/)
+ - [Our People cards](https://venngage.com/blog/presentation-layout-ideas/)
+ - Event Lists - https://www.youtube.com/watch?v=W9hnAVLgZ_g&t=493s and https://wpeventsplus.com/events-list/
+
+
+### Technical
 
 For generating browser prefixes - [Autoprefixer for CSS](https://autoprefixer.github.io/)
 
@@ -231,8 +257,12 @@ I found a way to close the navbar when an anchor point is clicked using jQuery o
 How to replace the Bootstrap dropdown caret icon from [stackoverflow](https://stackoverflow.com/questions/54396053/how-to-replace-bootstrap-dropdown-toggle-icon-with-another-default-icon)
 
 ### Content
-- The text for the Quotes section were taken from the [CMuse article ](https://www.cmuse.org/100-famous-and-inspirational-music-quotes/)
-- 
+ - The text for the music Quotes were taken from the [CMuse article.](https://www.cmuse.org/100-famous-and-inspirational-music-quotes/)
+ - The classes written content and teachers information was adapted from [Dublin School of Music.](http://dublinschoolofmusic.ie/)
+ - Testimonials were adapted from [North County Dublin Music School](http://www.ncdms.ie/) and [Dublin School of Music.](http://dublinschoolofmusic.ie/)
+ - The Benefits of music were taken from [Benefits of Learning Music article.](https://www.parents.com/kids/development/intellectual/6-benefits-of-music-lessons)
+ - About school content adapted from http://www.churchtownschoolofmusic.ie/ and http://www.themusicroom.ie/
+
 
 ### Media
 - The photos and vectors used in this site were obtained from:
