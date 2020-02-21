@@ -168,14 +168,22 @@ In this section, you need to convince the assessor that you have conducted enoug
 Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
 
 ### Validation
+
+#### HTML
 I validated the HTML with the [W3 Validation Service](https://validator.w3.org/). There was a warning about lack of a heading inside the first section on the about page. This section contains just some quick statistics about the school (130+ students etc...), but I do not want a heading here, so I decided I could leave this as is because it was just a warning.
+
+The forms' option fields reported as an error (even though it worked) at first because the select field is required, yet has an initial value from the first option field. If an option is initially selected due to the attribute, then the select control always has a value. Unless that value is set to the empty string there is no point in using the attribute required. So the fix is to add an empty value to the first option.
+
+An error showed up with regards to the modal's aria-labelled attribute which was not referencing the correct element, on the contact and classes page. This was fixed.
 
 Validation also warned of missing image alt tags and said the pipe character that Google fonts uses to separate fonts wa in valid, so I changed it to the encoding required for a url - %7c, which ironically how Google says to encode it on https://developers.google.com/maps/documentation/urls/url-encoding
 
+#### CSS
+
 I validated the CSS with the [W3 CSS Validation Service](http://www.css-validator.org/) for CSS Level 3 and it found no errors. 
 
-### Testing on Browsers and Devices
-I tested the website on the following browsers:
+### Testing on Browsers, Screen sizes and Devices
+I tested the website on the following browsers and devices:
 - Chrome on PC and Mac
 - Firefox on PC and Mac
 - Safari on Mac
@@ -186,9 +194,15 @@ I tested the website on the following browsers:
 - Native Browser on Samsung Galaxy S8
 - Chrome on Lenovo 10" Tablet, Android V6
 
-On all of these the site worked fine as expected, except for some minor issues on IE11. Under the Teacher images there was a large space before their name. This was to do with the extra div I added to correct the images being squashed (see the section on Issues I had to overcome). This was easily fixed by giving the div an explicit height of 100%. Also, as I expected the CSS scroll-behaviour property would not work on IE11 or Edge.
+On all of the above the site worked fine as expected, except for some minor issues on IE11. Under the Teacher images there was a large space before their name. This was to do with the extra div I added to correct the images being squashed (see the section on Issues I had to overcome). This was easily fixed by giving the div an explicit height of 100%. Also, as I expected the CSS scroll-behaviour property would not work on IE11, Edge or Safari.
 
-TO DO Testing Screen sizes - I ran the website through [Browser Stack](https://www.browserstack.com/) to test on real devices and screen sizes. 
+Testing other devices - I ran the website through [Browser Stack](https://www.browserstack.com/) on a free account to test on real devices and screen sizes. I was able to live test the following devices:
+ - Samsung Galaxy Tab, Chrome, 4, 10.1 in - 5.4 x 8.6in, Resolution 1280 x 800px
+ - iPhone 6S, Safari, 4.7 in - 2.3 x 4.1 in, Resolution 750 x 1334px, Viewport 375 x 667 dp
+ - iPad Air 2, iOS v8, Safari, Resolution 9.7 in - 5.8 x 7.8in, Viewport 768 x 1024 dp
+ 
+They worked fine apart from iPad Air 2, which seemed to break the Bootstrap grid. Some research indicated that the CSS flex property was not supported on iOS v8. Considering iOS 8 was out in 2014, this is probably not much of an issue now. Apple would usually push updated to devices over the years. Ref - https://github.com/twbs/bootstrap/issues/24012
+
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
 1. Responsive carousel images:
