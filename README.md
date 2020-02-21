@@ -52,7 +52,7 @@ This formed the basis of my final wireframes, which were created in Balsamiq:
     
 - [Home page on desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/music-school-homepage.png)
     
-- [About page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/about-music-school-mobile version.png)
+- [About page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/about-music-school-mobile-version.png)
 
 - [About page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/about-music-school.png)
     
