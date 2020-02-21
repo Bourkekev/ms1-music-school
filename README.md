@@ -232,7 +232,7 @@ To run locally, you can clone this repository directly into the editor of your c
 
 ### Design and Research
 
-The following sites are websites that I used for reference:
+The following sites are websites that I used for reference and inspiration:
  - https://solfeggio.cmsmasters.net/contacts/
  - http://www.churchtownschoolofmusic.ie/
  - http://www.themusicroom.ie/
@@ -243,7 +243,7 @@ The following sites are websites that I used for reference:
  - [Colour and emotions](https://99designs.ie/blog/tips/how-color-impacts-emotions-and-behaviors/)
  - [Nice clean colour scheme with greens and orange](https://www.formandfunctionagency.com/)
  - [Our People cards](https://venngage.com/blog/presentation-layout-ideas/)
- - Event Lists - https://www.youtube.com/watch?v=W9hnAVLgZ_g&t=493s and https://wpeventsplus.com/events-list/
+ - Event Lists - https://www.youtube.com/watch?v=W9hnAVLgZ_g&t=493s, https://wpeventsplus.com/events-list/ and https://demo.myeventon.com/
 
 
 ### Technical
@@ -273,6 +273,5 @@ How to replace the Bootstrap dropdown caret icon from [stackoverflow](https://st
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
 - Thanks to my mentor Anthony Ngene for his suggestions and his time.
 - TO FINISH Thanks to those on Slack for reviewing my project.
