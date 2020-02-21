@@ -278,13 +278,13 @@
                     <p class="lead text-center pb-5">Fill in the form below with your desired instrument and we will get back to you as soon as possible.</p>
                     <form id="class-enquiry">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="name" id="fullname" class="form-control" required />
                                     <label class="form-control-placeholder" for="fullname">Name</label>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <input type="email" name="email" id="email" class="form-control" required />
                                     <label class="form-control-placeholder" for="email">Email</label>
@@ -292,21 +292,44 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="phone" id="phone" class="form-control" required />
                                     <label class="form-control-placeholder" for="phone">Phone</label>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <select id="age-group" name="age-group" class="form-control" required>
-                                        <option selected>Student age group...</option>
+                                        <option selected disabled>Student age group...</option>
                                         <option>5 to 12 years</option>
                                         <option>13 to 18 years</option>
                                         <option>18+ years</option>
                                     </select>
                                     <label class="form-control-placeholder sr-only" for="age-group">Student Age Group</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <select id="experience" name="experience" class="form-control" required>
+                                        <option selected disabled>What's your experience level?</option>
+                                        <option>Beginner</option>
+                                        <option>Intermediate</option>
+                                        <option>Advanced</option>
+                                    </select>
+                                    <label class="form-control-placeholder sr-only" for="age-group">What's your experience level?</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <select id="free-class" name="free-class" class="form-control" required>
+                                        <option selected disabled>Would you like a Free Class?</option>
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                    <label class="form-control-placeholder sr-only" for="age-group">Would you like a Free Class?</label>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +375,7 @@
                         <div class="row">
                             <div class="col">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#classesFormModal">Send</button>
+                                <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#classesFormModal">Enquire</button>
                             </div>
                         </div>
                     </form>

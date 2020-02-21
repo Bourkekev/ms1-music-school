@@ -524,8 +524,11 @@ iframe.location-map {
     position: relative;
     margin-bottom: 1.5rem;
 }
-.form-control {
+.form-control,
+select.form-control {
     height: calc(2em + .75rem + 2px);
+}
+.form-control:not(select) {
     padding: 1.2rem .75rem .35rem;
 }
 .form-control-placeholder {
