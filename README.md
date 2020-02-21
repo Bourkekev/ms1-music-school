@@ -31,38 +31,38 @@ This section determines what the users should be able to do on the website.
 
 ### Structure
 At this point I started thinking about what information, pages, features, and calls to action were to necessary and how they would be grouped. I have included some basic sketching of ideas:
-- [Initial ideas 01](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/initial-ideas.jpg)
+- [Initial ideas 01](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/initial-ideas.jpg)
     - These are initial ideas for the organisation of information and pages required, and sketching them down. It is rough and not very organised at this point.
-- [Initial ideas 02](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/initial-ideas-02.jpg)
+- [Initial ideas 02](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/initial-ideas-02.jpg)
     - This is a bit more refined sketch of the information and order of the information, I would like on the pages. Below that there are just some quick sketches of the footer, contact page and an element for presenting a music class.
 
 ### Skeleton
 At this point I began sketching proper wireframes, first on paper as it is quicker, helps to get the ideas out faster. I needed to think about how the User will navigate through the site, what content has priority, and how the content relates to each other. 
-- [Home page on mobile, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/homepage-mobile.jpg)
+- [Home page on mobile, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/homepage-mobile.jpg)
     
-- [Home page on desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/homepage-desktop.jpg)
+- [Home page on desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/homepage-desktop.jpg)
     
-- [About page desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/about-page-desktop.jpg)
+- [About page desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/about-page-desktop.jpg)
     
-- [Classes page desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/edited/classes-page-desktop.jpg)
+- [Classes page desktop, sketched wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/sketch-wireframes/classes-page-desktop.jpg)
     
 This formed the basis of my final wireframes, which were created in Balsamiq:
 
-- [Home page on mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Music%20School%20homepage%20(mobile%20version).png)
+- [Home page on mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/music-school-homepage-mobile-version.png)
     
-- [Home page on desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Music%20School%20homepage.png)
+- [Home page on desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/music-school-homepage.png)
     
-- [About page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/About%20-%20Music%20school%20(mobile%20version).png)
+- [About page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/about-music-school-mobile version.png)
 
-- [About page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/About%20-%20Music%20school.png)
+- [About page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/about-music-school.png)
     
-- [Classes page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Classes%20and%20Fees%20(Mobile%20Version).png)
+- [Classes page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/classes-and-fees-mobile-version.png)
 
-- [Classes page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Classes%20and%20Fees.png)
+- [Classes page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/classes-and-fees.png)
 
-- [Contact page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Contact%20-%20Music%20School%20(Mobile%20version).png)
+- [Contact page mobile wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/contact-music-school-mobile-version.png)
 
-- [Contact page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/Contact%20-%20Music%20School.png)
+- [Contact page desktop wireframe](https://github.com/Bourkekev/ms1-music-school/blob/master/wireframes/contact-music-school.png)
 
 ### Surface
 This is the sensory design section of a website, or how it looks, feels and sounds. I wanted the design to be clean and the colour scheme to be light and refreshing. I created a moodboard with Adobe Spark from research of colours, styles and components to visually illustrate the style I wished to pursue. You can see that [moodboard here.](https://github.com/Bourkekev/ms1-music-school/blob/master/design/ms1-moodboard.jpg)
@@ -165,6 +165,8 @@ Whenever it is feasible, prefer to automate your tests, and if you've done so, p
 ### Validation
 I validated the HTML with the [W3 Validation Service](https://validator.w3.org/). There was a warning about lack of a heading inside the first section on the about page. This section contains just some quick statistics about the school (130+ students etc...), but I do not want a heading here, so I decided I could leave this as is because it was just a warning.
 
+Validation also warned of missing image alt tags and said the pipe character that Google fonts uses to separate fonts wa in valid, so I changed it to the encoding required for a url - %7c, which ironically how Google says to encode it on https://developers.google.com/maps/documentation/urls/url-encoding
+
 I validated the CSS with the [W3 CSS Validation Service](http://www.css-validator.org/) for CSS Level 3 and it found no errors. 
 
 ### Testing on Browsers and Devices
@@ -226,6 +228,8 @@ The border gradient on the About page under the school stats was inspired by thi
 
 I found a way to close the navbar when an anchor point is clicked using jQuery on this [stackoverflow page](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click).
 
+How to replace the Bootstrap dropdown caret icon from [stackoverflow](https://stackoverflow.com/questions/54396053/how-to-replace-bootstrap-dropdown-toggle-icon-with-another-default-icon)
+
 ### Content
 - The text for the Quotes section were taken from the [CMuse article ](https://www.cmuse.org/100-famous-and-inspirational-music-quotes/)
 - 
@@ -240,3 +244,5 @@ I found a way to close the navbar when an anchor point is clicked using jQuery o
 ### Acknowledgements
 
 - I received inspiration for this project from X
+- Thanks to my mentor Anthony Ngene for his suggestions and his time.
+- TO FINISH Thanks to those on Slack for reviewing my project.
