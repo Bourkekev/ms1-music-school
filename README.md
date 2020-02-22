@@ -122,8 +122,9 @@ Before beginning development, I listed some styling ideas that I felt would enha
 5. Google Fonts
 6. Javascript - Minor uses of Javascript for enhancing the user experience.
 7. TinyPNG - To keep transparent png sizes to a minimum I used the online png compressing service [TinyPNG](https://tinypng.com/)
-7. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation. I used a very small jQuery script (global.js) to close the navbar when a sub menu item is clicked, because the sub menu items are only used for links to anchor points in the homepage.
-    
+8. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation. I used a very small jQuery script (global.js) to close the navbar when a sub menu item is clicked, because the sub menu items are only used for links to anchor points in the homepage.
+9. I used Photoshop and Illustrator for image and svg manipulation.
+
 Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).
 
 ## Features
@@ -138,7 +139,6 @@ This section describes how users can achieve what they need to when viewing the 
 - **Follow the school on social media** - users can find the social media profiles of the school.
 - **Enquire about music classes** - allows users enquire about specific instrument classes, by having them fill out the equiry form on the classes page. 
 - **Enquire about trying a free class** - allows users enquire about trying out the free class offer, by having them fill out the equiry form on the classes page. The button on the homepage links to this form.
-- **
 
 #### Minor Features
 Expand the sections below for more info on details
@@ -164,7 +164,7 @@ Expand the sections below for more info on details
 <details>
   <summary><strong>'Jump to section' for mobile</strong></summary>
 
-I added a 'Jump to section' for mobile on the homepage. As a dropdown under Home I added links to sections of teh homepage, to help minimise scrolling. To get a nice scroll to the anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). This property is not fully supported, particularly on Safari (both Mac and iPhone), but it will degrade gracefully and still jump top the anchor point on those devices.
+I added a 'Jump to section' for mobile on the homepage. As a dropdown under Home I added links to sections of the homepage, to help minimise scrolling. To get a nice scroll to the anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). This property is not fully supported, particularly on Safari (both Mac and iPhone), but it will degrade gracefully and still jump to the anchor point on those devices.
 </details>
 
 <details>
@@ -182,20 +182,16 @@ I am not a fan of form labels appearing above the input, but they are important 
 
 ## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
-
 ### Validation
 
 #### HTML
-I validated the HTML with the [W3 Validation Service](https://validator.w3.org/). There was a warning about lack of a heading inside the first section on the about page. This section contains just some quick statistics about the school (130+ students etc...), but I do not want a heading here, so I decided I could leave this as is because it was just a warning.
+I validated the HTML with the [W3 Validation Service](https://validator.w3.org/). There was a warning about lack of a heading inside the first section on the about page. This section contains just some quick statistics about the school (130+ students etc...), but I do not want a heading here, so I decided I could leave this as is because it was just a warning about HTML semantics.
 
 The forms' option fields reported as an error (even though it worked) at first because the select field is required, yet has an initial value from the first option field. If an option is initially selected due to the attribute, then the select control always has a value. Unless that value is set to the empty string there is no point in using the attribute required. So the fix is to add an empty value to the first option.
 
 An error showed up with regards to the modal's aria-labelled attribute which was not referencing the correct element, on the contact and classes page. This was fixed.
 
-Validation also warned of missing image alt tags and said the pipe character that Google fonts uses to separate fonts wa in valid, so I changed it to the encoding required for a url - %7c, which ironically how Google says to encode it on https://developers.google.com/maps/documentation/urls/url-encoding
+Validation also warned of missing image alt tags and said the pipe character that Google fonts uses to separate fonts was in valid, so I changed it to the encoding required for a url - %7c, which ironically how Google says to encode it on https://developers.google.com/maps/documentation/urls/url-encoding
 
 #### CSS
 
@@ -222,28 +218,28 @@ Testing other devices - I ran the website through [Browser Stack](https://www.br
  
 They worked fine apart from iPad Air 2, which seemed to break the Bootstrap grid. Some research indicated that the CSS flex property was not supported on iOS v8. Considering iOS 8 was out in 2014, this is probably not much of an issue now. Apple would usually push updated to devices over the years. Ref - https://github.com/twbs/bootstrap/issues/24012
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
 
-1. Responsive carousel images:
-    1. To allow me to use a different image in the carousel for mobile I used the `<picture>` element. This allowed me to create a smaller portrait image just for a mobile, which gave more space for the carousel text that is layered on top.
-    
-2. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+#### Responsive carousel images:
+To allow me to use a different image in the carousel for mobile I used the `<picture>` element. This allowed me to create a smaller portrait image just for a mobile, which gave more space for the carousel text that is layered on top.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ## Deployment
 
-This site is hosted using GitHub pages, deployed directly from the master branch. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
+### GitHub Pages
+This site is hosted using GitHub pages, deployed directly from the master branch of GitHub. The deployed site will update automatically upon new commits to the master branch. In order for the site to deploy correctly on GitHub pages, the landing page must be named `index.html`.
+
+To host on GitHub pages you must follow these steps:
+1. Go to the project repository
+2. Go to the Settings tab
+3. Scroll down to the GitHub pages section and set the source to master branch. This turns on GitHub pages for this repository.
+4. The page reloads, so you must scroll back down to GitHub pages and there you will get your url for viewing the site
 
 To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/Bourkekev/ms1-music-school.git` into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
+
+### My own domain
+I also uploaded the files for my site (except git folders or files) to a sub folder on my own domain via FTP. This can be viewed at http://kevinbourke.ie/ms1-music-school/
+I created a robots.txt file in my domain root and added `Disallow: /ms1-music-school/` to prevent search engines indexing this site.
 
 ## Issues I had to overcome
  - When using an image in the Bootstrap card (for Our Teachers), and I applied padding to the image, it caused the image to get squashed horizontally a bit. This was to do with Bootstrap using `display:flex; and flex-direction:column;` on the card. To correct this I wrapped the image in a div, so it was not getting affected directly. 
