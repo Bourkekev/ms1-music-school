@@ -11,9 +11,9 @@ For me this is bad user experience, you should really make your Call to Action o
  
 This section provides insight into the UX process, focusing on who this website is for, what it is that they want to achieve and how this project is the best way to help them achieve these things.
 
-- As a user who is thinking about learning a musical instrument, I want to find out information that might convince me to take a class. The option of taking a free introductory class would be quite appealing. (image of free class)
-- As a user who has already begun learning an instrument, perhaps I want to find some more formal training, to help me progress, or to add other related skills like reading music. (image of classes)
-- As a user who might have children who are interested in music, I want to find out if these classes look appropriate, and where they take place. (image of Teachers, references to children, map)
+- As a user who is thinking about learning a musical instrument, I want to find out information that might convince me to take a class. The option of taking a free introductory class would be quite appealing.
+- As a user who has already begun learning an instrument, perhaps I want to find some more formal training, to help me progress, or to add other related skills like reading music.
+- As a user who might have children who are interested in music, I want to find out if these classes look appropriate, who the teachers are and where they take place.
 
 ### Strategy
 There are 2 main goals of the website: 
@@ -69,7 +69,7 @@ This is the sensory design section of a website, or how it looks, feels and soun
 
 I decided on a pastel green as Green makes you feel optimistic and refreshed, and Green symbolizes health, new beginnings and wealth, according to [this article on 99 designs](https://99designs.ie/blog/tips/how-color-impacts-emotions-and-behaviors/). This would be my primary colour.
 
-Also Spotify, currently the largest music streaming service in the world uses green in it's logo and designs, which likely represents freshness and vitality, something essential to a music brand. For reference see point 29 here - (https://piktochart.com/blog/inspirational-brand-colors/). However, I did not want it as vibrant or bright as the Spotify green, and leaning more toward the blue spectrum more like AirBnb.
+Also Spotify, currently the largest music streaming service in the world uses green in it's logo and designs, which likely represents freshness and vitality, something essential to a music brand. For reference see point 29 and 30 here - (https://piktochart.com/blog/inspirational-brand-colors/). However, I did not want it as vibrant or bright as the Spotify green, and leaning more toward the blue spectrum more like AirBnb.
 
 <details>
     <summary><strong>For more on how I chose the colour scheme expand this section</strong></summary>
@@ -127,31 +127,50 @@ Before beginning development, I listed some styling ideas that I felt would enha
 Where possible, I tried to use classes that are built into a technology such as Bootstrap (like mb-lg-5) or Font Awesome (like fa-3x).
 
 ## Features
+ 
+### Existing Features
+This section describes how users can achieve what they need to when viewing the site.
+- **View upcoming classes** - allows users to see dates and days for upcoming classes and cost.
+- **View the staff** - Allows users to view the teachers and get a small pice of information about their qualifications/experience.
+- **Find the school location** - the contact page gives the address and contact details of the school as well as a map so users can quickly see where the school is located.
+- **Contact the school** - allows users contact the school, by having them fill out the contact form. The form does not work yet as there is no server side script to send the information. I have used the Bootstrap modal (from the documentation) to pop-up when the user clicks the button, so it will at least give some feedback and also demonstrate the Bootstrap modal pop-up.
+- **Find about previous students experiences** - the user can view some testimonials from previous students.
+- **Follow the school on social media** - users can find the social media profiles of the school.
+- **Enquire about music classes** - allows users enquire about specific instrument classes, by having them fill out the equiry form on the classes page. 
+- **Enquire about trying a free class** - allows users enquire about trying out the free class offer, by having them fill out the equiry form on the classes page. The button on the homepage links to this form.
+- **
 
-### Expand the sections below for more info on details
+#### Minor Features
+Expand the sections below for more info on details
 <details>
-  <summary>Creating navbar X to close</summary>
+  <summary><strong>Creating navbar X to close</strong></summary>
   
   To create the X that appears when the navbar is open, I first created an svg file from the bootstrap svg that was embedded as data:image. I edited this with Illustrator to create the X and then I had to copy the stroke styles for the path from the bootstrap svg so it was visible. 
   Then i added the class 'collapsed' to the button.navbar-toggler element in the HTML, so it has this class by default on load (usually only added upon clicking  menu toggle the first time). I overrode the default background images for the toggle icon, and changed the image when the toggler does not have the class 'collapsed' on it.
 </details>
- 
-### Existing Features
-- Feature 1 - allows users contact the school, by having them fill out the contact form. The form does not work yet as there is no server side script to send the information. I have used the Bootstrap modal (from the documentation) to pop-up when the user clicks the button, so it will at least give some feedback and also demonstrate the Bootstrap modal pop-up.
-- On the classes page, there is a small javascript
 
-#### Minor Features
- - There is a 'Skip to main content' link just inside the body tag for accessibility for screenreaders. The main content is not usually the first thing on a web page. Keyboard and screen reader users generally must navigate a long list of navigation links, sub-lists of links, corporate icons, site searches, and other elements before ever arriving at the main content. This is then hidden from view with the bootstrap class 'sr-only', however when it receives focus from keyboard it becomes visible, by basically reversing the Bootstrap CSS properties on focus. This is based on accessibility recommendations from https://webaim.org/techniques/skipnav/
+<details>
+  <summary><strong>Auto select instrument checkbox on click 'Enquire' button</strong></summary>
 
-- Jump to section for mobile. To get a nice scroll to anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). This property is not fully supported, particularly on Safari (both Mac and iPhone), but it will degrade gracefully and still jump top the anchor point on those devices.
+ When a user clicks the 'Enquire' button beside a specific class on the classes page, they will be brought to the Enquiry form below and the checkbox for that specific instrument will be selected. I used a small javascript onclick function to achieve this, based off a question on [Stack Overflow](https://stackoverflow.com/questions/25763800/check-checkbox-by-clicking-button)
+ </details>
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+<details>
+  <summary><strong>Skip to main content</strong></summary>
 
-##### Form Labels
+ There is a 'Skip to main content' link just inside the body tag for accessibility for screenreaders. The main content is not usually the first thing on a web page. Keyboard and screen reader users generally must navigate a long list of navigation links, sub-lists of links, corporate icons, site searches, and other elements before ever arriving at the main content. This is then hidden from view with the bootstrap class 'sr-only', however when it receives focus from keyboard it becomes visible, by basically reversing the Bootstrap CSS properties on focus. This is based on accessibility recommendations from https://webaim.org/techniques/skipnav/. This can be checked by pressing tab when a pages loads.
+ </details>
+
+<details>
+  <summary><strong>'Jump to section' for mobile</strong></summary>
+
+I added a 'Jump to section' for mobile on the homepage. As a dropdown under Home I added links to sections of teh homepage, to help minimise scrolling. To get a nice scroll to the anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). This property is not fully supported, particularly on Safari (both Mac and iPhone), but it will degrade gracefully and still jump top the anchor point on those devices.
+</details>
+
+<details>
+  <summary><strong>Form Labels</strong></summary>
 I am not a fan of form labels appearing above the input, but they are important for accessibility, for screen-readers and the like. Placeholder text within the input alone is not good enough. Some techniques just use placeholder text and simply hide the label visually, but are still readable by screen-readers by setting a tiny height and clipping the element. This is fine but the placeholder text disappears once the field receives some input. So looking back over a somewhat long form can make it difficult to know what each form field was for. However I have seen forms where the placeholder text moves up when you click inside (or focus on) the input, such as Aer Lingus and LinkedIn. This placeholder text is actually the label and is just positioned over the input and moved when the input is focused on, and stays if there is valid content in the input. Bootstrap has an experimental version of this but it relies on ::placeholder-shown, which is more supported now in latest browsers, but still unsupported in some older browser versions like Edge, IOS Safari and Android. The downside is that you cannot use placeholder text for additional information. 
-
-##### Scroll to anchor point
-To get a nice scroll to anchor points wihin then homepage, I used the css scroll-behaviour property based off [CSS Tricks](https://css-tricks.com/almanac/properties/s/scroll-behavior/). Thi
+</details>
 
 ### Features to consider implementing in the future
  - Social Media feed, Instagram, Twitter
@@ -262,13 +281,15 @@ The following sites are websites that I used for reference and inspiration:
 
 ### Technical
 
-For generating browser prefixes - [Autoprefixer for CSS](https://autoprefixer.github.io/)
+ - For generating browser prefixes - [Autoprefixer for CSS](https://autoprefixer.github.io/)
 
-The border gradient on the About page under the school stats was inspired by this article on [loxodrome](https://www.loxodrome.io/post/gradient-borders/) and also on [CSS-Tricks](https://css-tricks.com/gradient-borders-in-css/).
+ - The border gradient on the About page under the school stats was inspired by this article on [loxodrome](https://www.loxodrome.io/post/gradient-borders/) and also on [CSS-Tricks](https://css-tricks.com/gradient-borders-in-css/).
 
-I found a way to close the navbar when an anchor point is clicked using jQuery on this [stackoverflow page](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click).
+ - I found a way to close the navbar when an anchor point is clicked using jQuery on this [stackoverflow page](https://stackoverflow.com/questions/42401606/how-to-hide-collapsible-bootstrap-4-navbar-on-click).
 
-How to replace the Bootstrap dropdown caret icon from [stackoverflow](https://stackoverflow.com/questions/54396053/how-to-replace-bootstrap-dropdown-toggle-icon-with-another-default-icon)
+ - How to replace the Bootstrap dropdown caret icon based on this [Stack Overflow question.](https://stackoverflow.com/questions/54396053/how-to-replace-bootstrap-dropdown-toggle-icon-with-another-default-icon)
+
+ - When a user clicks the 'Enquire' button beside a specific class on the classes page, they will be brought to the Enquiry form below and the checkbox for that specific instrument will be selected. The javascript onclick function to achieve this, based off a question on [Stack Overflow.](https://stackoverflow.com/questions/25763800/check-checkbox-by-clicking-button)
 
 ### Content
  - The text for the music Quotes were taken from the [CMuse article.](https://www.cmuse.org/100-famous-and-inspirational-music-quotes/)
@@ -279,11 +300,12 @@ How to replace the Bootstrap dropdown caret icon from [stackoverflow](https://st
 
 
 ### Media
-- The photos and vectors used in this site were obtained from:
+- The photos and vectors (except logo) used in this site were obtained from:
     - https://pixabay.com/
     - https://www.vecteezy.com/
     - https://unsplash.com/
 - The favicons were generated at https://realfavicongenerator.net/
+- I designed the logo myself, by just adapting a script font
 
 ### Acknowledgements
 
