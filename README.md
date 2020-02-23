@@ -1,6 +1,8 @@
 # Milestone 1 - Music School - by Kevin Bourke
 
 This project is a small website for a Music School. The main purpose would be to get people interest in taking the music classes on offer from the music school. It promotes the positive benefits of learning music to help sell the classes. The website will display the various intruments that they teach as well as upcoming classes.
+
+![Responsive demo](design/phone-and-desktop-responsiveness.gif "Responsive demo")
  
 ## UX
 
