@@ -324,4 +324,4 @@ The following sites are websites that I used for reference and inspiration:
 ### Acknowledgements
 
 - Thanks to my mentor Anthony Ngene for his suggestions and his time.
-- TO FINISH Thanks to those on Slack for reviewing my project and making suggestions, Michael Dijk and Gustaf Ljungwaldh.
+- Thanks to those on Slack for reviewing my project and making suggestions, Michael Dijk and Gustaf Ljungwaldh.

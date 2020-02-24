@@ -594,11 +594,14 @@ textarea#message {
     color: #fff;
     font-size: 12px;
 }
-.opening-hours .oh-list {
+.oh-list {
     list-style: none;
     padding: 0 0 0 40px;
     position: relative;
-    margin-top: 20px
+    margin-top: 20px;
+    max-width: 189px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .opening-hours .oh-list:before {
     content: '\f017';
@@ -770,6 +773,10 @@ textarea#message {
     /* Fix background only on desktop */
     .bg-fixed {
         background-attachment: fixed;
+    }
+    /* opening hours*/
+    .oh-list {
+        max-width: 100%;
     }
 }
 
