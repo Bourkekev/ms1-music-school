@@ -6,8 +6,10 @@ This project is a small website for a Music School. The main purpose would be to
  
 ## UX
 
-On some of the websites I looked as part of my research, it was not clear how you go about signing up for a course. For example, Dublin School of Music you have to go to the individual page for each instrument and it has it just written in plain text towards the bottom of a big paragraph of text : "For further information or to book a course of lessons, please phone us at 014929998", and The Music Room similarly just has text written at the bottom of Courses and Fees pages, and simply says "Please give us a call on 01 2965570 with any questions". 
+On some of the websites I looked as part of my research, it was not clear how you go about signing up for a course. For example, Dublin School of Music* you have to go to the individual page for each instrument and it has it just written in plain text towards the bottom of a big paragraph of text : "For further information or to book a course of lessons, please phone us at 014929998", and The Music Room similarly just has text written at the bottom of Courses and Fees pages, and simply says "Please give us a call on 01 2965570 with any questions". 
 For me this is bad user experience, you should really make your Call to Action or your users end goal as easy to find as possible. Ideally the path to sign up (or other CTA) should be almost instantly visible to the user. 
+
+_* The Dublin School of Music website changed during the course of this project and is now much better in this regard._
 
 ### User Stories
  
