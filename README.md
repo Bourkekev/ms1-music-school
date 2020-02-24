@@ -301,13 +301,27 @@ The following sites are websites that I used for reference and inspiration:
 
 ### Media
 - The photos and vectors (except logo) used in this site were obtained from:
-    - https://pixabay.com/
-    - https://www.vecteezy.com/
-    - https://unsplash.com/
+    - https://pixabay.com/ from the following Photographers/Users:
+        - Claudio_Scott
+        - Pexels
+        - PourquoiPas
+        - Vladvictoria
+        - dlohner
+        - Free-Photos
+        - krzysztof-m
+        
+    - https://www.vecteezy.com/ from the following users:
+        - jellyfishwater
+        - insanity100
+     
+    - https://unsplash.com/ from the following users:
+        - Oleg Ivanov
+        - Josh Sorenson
+        - Brooke Cagle
 - The favicons were generated at https://realfavicongenerator.net/
-- I designed the logo myself, by just adapting a script font
+- I designed the logo myself, by just adapting a script font Kaushan Script.
 
 ### Acknowledgements
 
 - Thanks to my mentor Anthony Ngene for his suggestions and his time.
-- TO FINISH Thanks to those on Slack for reviewing my project.
+- TO FINISH Thanks to those on Slack for reviewing my project and making suggestions, Michael Dijk and Gustaf Ljungwaldh.
