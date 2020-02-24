@@ -125,7 +125,7 @@ Before beginning development, I listed some styling ideas that I felt would enha
 4. Font Awesome
 5. Google Fonts
 6. Javascript - Minor uses of Javascript for enhancing the user experience.
-7. TinyPNG - To keep transparent png sizes to a minimum I used the online png compressing service [TinyPNG](https://tinypng.com/)
+7. TinyPNG - To keep transparent png sizes to a minimum I used the online png compressing service [TinyPNG](https://tinypng.com/).
 8. [JQuery](https://jquery.com) - The project uses **JQuery** to simplify DOM manipulation. I used a very small jQuery script (global.js) to close the navbar when a sub menu item is clicked, because the sub menu items are only used for links to anchor points in the homepage.
 9. I used Photoshop and Illustrator for image and svg manipulation.
 
@@ -236,13 +236,13 @@ This site is hosted using GitHub pages, deployed directly from the master branch
 To host on GitHub pages you must follow these steps:
 1. Go to the project repository
 2. Go to the Settings tab
-3. Scroll down to the GitHub pages section and set the source to master branch. This turns on GitHub pages for this repository.
+3. Scroll down to the GitHub pages section and set the source to master branch. This turns on GitHub pages for this repository
 4. The page reloads, so you must scroll back down to GitHub pages and there you will get your url for viewing the site
 
 To run locally, you can clone this repository directly into the editor of your choice by pasting `git clone https://github.com/Bourkekev/ms1-music-school.git` into your terminal. To cut ties with this GitHub repository, type `git remote rm origin` into the terminal.
 
 ### My own domain
-I also uploaded the files for my site (except git folders or files) to a sub folder on my own domain via FTP. This can be viewed at http://kevinbourke.ie/ms1-music-school/
+I also uploaded the files for my site (except git folders or files) to a sub folder on my own domain via FTP. This can be viewed at http://kevinbourke.ie/ms1-music-school/.
 I created a robots.txt file in my domain root and added `Disallow: /ms1-music-school/` to prevent search engines indexing this site.
 
 ## Issues I had to overcome
